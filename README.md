@@ -1,7 +1,10 @@
-# HW-05
-This is the 5th homework for M3-Java (Harbour Space)
+# Project : Data Analysis of Wikipedia using Hadoop
+This is the project for M3-Java (Harbour Space)
 
-Author: Pierre Schwob
+Authors: 
+Patricia Poral
+Duc Pham
+Pierre Schwob
 
 
-![HW-05](https://github.com/IAbeteEtMechante/HW-05/workflows/HW-05/badge.svg)
+![Wikipedia_analysis_with_Hadoop](https://github.com/IAbeteEtMechante/Wikipedia_analysis_with_Hadoop/workflows/Wikipedia_analysis_with_Hadoop/badge.svg)
