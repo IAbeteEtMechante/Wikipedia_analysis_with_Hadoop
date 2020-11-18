@@ -28,14 +28,14 @@ Authors:
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-wikipedia is probably the biggest amount of Text data available out there, that's why it is used to train huge NLP models like GPT3.
+Wikipedia is probably the biggest amount of Text data available out there, that's why it is used to train huge NLP models like GPT3.
 We are interested to use our newly acquired knowledge of Java in M3-Java at Harbour Space, to get some interesting insight about WikiPedia. Because of the huge amount of data to work with, we try to implement a MapReduce approach on top of Hadoop.
 
 Plan of work:
 * Get some data from Wikipedia, using some APIs
 * Make an HDFS Hadoop network with our machines
 * Transfer that data to our machine
-* use MapReduce to get insight about that data
+* Use MapReduce to get insight about that data
 * Build more analysis on top of those MapReduce results
 * Optional : grow that Hadoop network on the cloud (Digital Ocean)
 
