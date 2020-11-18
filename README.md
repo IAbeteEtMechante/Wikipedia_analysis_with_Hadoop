@@ -93,7 +93,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 ### JUnit tests
 For every .java file there is a corresponding JUnit testfile to check that the behaviour corresponds to what is expected.
-However there are many things that we cannot test with JUnit tests on that project.
+However there are many things that we cannot test with JUnit tests on that project. Therefore we use many other methods of testing.
 
 ###  Hadoop tests
 A described above in the Usage section, we can also run our .jar files on our Hadoop Standalone installations, and run some tests using bash scripts on it. This will be done in the second part of this project.
