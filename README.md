@@ -93,10 +93,22 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 ### JUnit tests
 For every .java file there is a corresponding JUnit testfile to check that the behaviour corresponds to what is expected.
-However there are many things that we cannot test with JUnit tests on that project. Therefore we use many other methods of testing.
+However there are many things that we cannot test with JUnit tests on that project. Therefore we use many other methods of testing. Most of it will be done in the second part of this project.
+
+### Data Staging tests
+We need to make sure we pull the correct data to our MapReduce jobs.
+* Validate data from Wikipedia APIs: we can test it by comparing some results with Google Trends
+* Compare that data to the one we get into Hadoop HDFS: we can check that the data is the same as the one we get from the API.
+* Verify that the data goes into the correct location in HDFS: random check on Hadoop HDFS.
+
+### MapReduce tests
+We need to test that the MapReduce process works properly. This is partly done with our JUnit testing(data aggregation or segregation rules are implemented on the data,  key value pairs are generated...), but we also need to validate the data after the MapReduce process on Hadoop.
 
 ###  Hadoop tests
-A described above in the Usage section, we can also run our .jar files on our Hadoop Standalone installations, and run some tests using bash scripts on it. This will be done in the second part of this project.
+A described above in the Usage section, we can also run our .jar files on our Hadoop Standalone installations, and run some tests using bash scripts on it. 
+
+### Performance tests
+Not only do we want to check that our MapReduce jobs work properly, but because we are dealing with Big Data and we are trying to launch our project on a Network, it is important to also run some performance tests. It involves measuring the speed of our jobs, and also testing with bigger volumes of data.
 
 <!-- POSSIBLE EVOLUTIONS -->
 ## Possible Evolutions
