@@ -64,10 +64,19 @@ Need Hadoop
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-To use the WordCount MapReduce job on Hadoop,  you can use directly the .jar that we created from the command line on Ubuntu:
-$hadoop jar <path to:WordCount.jar> WordCount /data/input.txt /output
-Be careful that you need to put the full path to your copy of WordCount.jar.
-You also need to create a directory with a new name for output each time you run a job.
+### Count the number of words in a file
+To understand how to use the .jar files created from our java code, let's consider that you want to count the number of words in a file.
+You can use our WordCount.jar file and type this on the command line on Ubuntu/MacOS:
+```sh
+hadoop jar <path to:WordCount.jar> WordCount /data/input.txt /output
+```
+where:
+* <path to:WordCount.jar> is the full path to your copy of WordCount.jar
+* /data/input.txt is the path to the text file you want to count the number of words of
+* /output is the directory where you want to store the result. Be careful that this directory must be new. You must create a new directory every time 
+    you run a new Hadoop job.
+    
+_For more examples, please refer to the [Documentation](https://example.com)_
 
 
 <!-- POSSIBLE EVOLUTIONS -->
