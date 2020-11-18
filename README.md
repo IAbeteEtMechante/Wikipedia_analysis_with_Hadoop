@@ -52,7 +52,13 @@ Here are the major frameworks that we built our project with.
 Need Hadoop
 
 ### How to install Hadoop
+We recommend to start with the single node implementation (Standalone) on Hadoop version 1. 
+This is recommended for practicing Hadoop commands and test our .jar files, before using them on a multi node network.
 
+This is a multistep process that we will not describe in detail here.
+You can follow instructions here:
+
+[Hadoop installation](https://phoenixnap.com/kb/install-hadoop-ubuntu)
 
 
 ### How to use our repo
