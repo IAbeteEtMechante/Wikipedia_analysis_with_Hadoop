@@ -51,8 +51,13 @@ Here are the major frameworks that we built our project with.
 Need Hadoop
 
 ### How to install Hadoop
+We describe the single node implementation(Standalone) on Hadoop version 1. 
+This is recommended for practicing Hadoop commands and test our .jar files, before using them on a multi node network.
 
+This is a multistep process that we will not describe in detail here.
+You can follow instructions here:
 
+[Hadoop installation](https://phoenixnap.com/kb/install-hadoop-ubuntu)
 
 ### How to use our repo
 
@@ -67,7 +72,8 @@ Need Hadoop
 ### Count the number of words in a file
 To understand how to use the .jar files created from our java code, let's consider that you want to count the number of words in a file.
 First you need to install Hadoop on your machine. A single node implementation(Standalone) as described above in "How to install Hadoop" is enough.
-You can use our WordCount.jar file and type this on the command line on Ubuntu/MacOS:
+
+You can then use our WordCount.jar file and type this on the command line on Ubuntu/MacOS:
 ```sh
 hadoop jar <path to:WordCount.jar> WordCount /data/input.txt /output
 ```
