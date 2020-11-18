@@ -18,6 +18,7 @@ Authors:
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
 * [Usage](#usage)
+* [Testing](#testing)
 * [Possible Evolutions](#possible-evolutions)
 * [Contributing](#contributing)
 * [License](#license)
@@ -75,7 +76,7 @@ You can follow instructions here:
 
 ### Count the number of words in a file
 To understand how to use the .jar files created from our java code, let's consider that you want to count the number of words in a file.
-You can use our WordCount.jar file and type this on the command line on Ubuntu/MacOS:
+You can use our out/artifacts/Job/WordCount.jar file and type this on the command line on Ubuntu/MacOS:
 ```sh
 hadoop jar <path to:WordCount.jar> WordCount /data/input.txt /output
 ```
@@ -87,6 +88,15 @@ where:
     
 _For more examples, please refer to the [Documentation](https://example.com)_
 
+<!-- TESTING -->
+## Testing
+
+### JUnit tests
+For every .java file there is a corresponding JUnit testfile to check that the behaviour corresponds to what is expected.
+However there are many things that we cannot test with JUnit tests on that project. Therefore we use many other methods of testing.
+
+###  Hadoop tests
+A described above in the Usage section, we can also run our .jar files on our Hadoop Standalone installations, and run some tests using bash scripts on it. This will be done in the second part of this project.
 
 <!-- POSSIBLE EVOLUTIONS -->
 ## Possible Evolutions
