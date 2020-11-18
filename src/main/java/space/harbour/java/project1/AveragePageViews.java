@@ -41,7 +41,7 @@ public class AveragePageViews {
                 views += t.get();
                 count++;
             }
-            Double average = (double) views/(double) count;
+            Double average = ((double) views)/((double) count);
             context.write(key, new DoubleWritable(average));
         }
     }
