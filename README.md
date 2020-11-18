@@ -32,7 +32,7 @@ Wikipedia is probably the biggest amount of Text data available out there, that'
 We are interested to use our newly acquired knowledge of Java in M3-Java at Harbour Space, to get some interesting insight about WikiPedia. Because of the huge amount of data to work with, we try to implement a MapReduce approach on top of Hadoop.
 
 Plan of work:
-* Get some data from Wikipedia, using some APIs
+* Get some data from Wikipedia, using various APIs
 * Make an HDFS Hadoop network with our machines
 * Transfer that data to our machine
 * Use MapReduce to get insight about that data
@@ -41,6 +41,7 @@ Plan of work:
 
 ### Built With
 Here are the major frameworks that we built our project with.
+* [AQS Pageviews](https://wikitech.wikimedia.org/wiki/Analytics/AQS/Pageviews)
 * [Hadoop](https://hadoop.com)
 * [GSON](https://gson.com)
 
