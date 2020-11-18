@@ -71,9 +71,10 @@ You also need to create a directory with a new name for output each time you run
 
 
 <!-- POSSIBLE EVOLUTIONS -->
-## Evolution 1
+## Possible Evolutions
+### Evolution 1
 
-## Evolution 2
+### Evolution 2
 
 <!-- CONTRIBUTING -->
 ## Contributing
