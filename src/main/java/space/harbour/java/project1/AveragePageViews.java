@@ -46,7 +46,7 @@ public class AveragePageViews {
 
     public static void main(String[] args) throws IOException, ClassNotFoundException, InterruptedException {
         Configuration conf = new Configuration();
-        Job job = Job.getInstance(conf, "CountWiki");
+        Job job = Job.getInstance(conf, "countWikipedia");
         job.setJarByClass(AveragePageViews.class);
         job.setMapperClass(AveragePageViewsMap.class);
         job.setReducerClass(AveragePageViewsReduce.class);
@@ -55,6 +55,5 @@ public class AveragePageViews {
         job.setOutputValueClass(LongWritable.class);
         FileInputFormat.addInputPath(job, new Path(args[0]));
         FileOutputFormat.setOutputPath(job, new Path(args[1]));
-        System.exit(job.waitForCompletion(true) ? 0 : 1);
     }
 }
