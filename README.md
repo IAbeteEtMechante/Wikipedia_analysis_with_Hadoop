@@ -66,6 +66,7 @@ Need Hadoop
 
 ### Count the number of words in a file
 To understand how to use the .jar files created from our java code, let's consider that you want to count the number of words in a file.
+First you need to install Hadoop on your machine. A single node implementation(Standalone) as described above in "How to install Hadoop" is enough.
 You can use our WordCount.jar file and type this on the command line on Ubuntu/MacOS:
 ```sh
 hadoop jar <path to:WordCount.jar> WordCount /data/input.txt /output
