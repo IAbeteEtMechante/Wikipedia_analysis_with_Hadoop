@@ -16,6 +16,13 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 public class AveragePageViews {
     public static class AveragePageViewsMap extends Mapper<LongWritable, Text, Text, LongWritable> {
 
+        /**
+         * @param key
+         * @param value
+         * @param context
+         * @throws IOException
+         * @throws InterruptedException
+         */
         @Override
         public void map(LongWritable key, Text value, Context context)
                 throws IOException, InterruptedException {
@@ -26,6 +33,11 @@ public class AveragePageViews {
             context.write(article, views);
         }
 
+        /**
+         * @param context
+         * @throws IOException
+         * @throws InterruptedException
+         */
         @Override
         protected void setup(Context context) throws IOException, InterruptedException {
         }
@@ -33,6 +45,13 @@ public class AveragePageViews {
 
     public static class AveragePageViewsReduce extends
             Reducer<Text, LongWritable, Text, DoubleWritable> {
+        /**
+         * @param key
+         * @param values
+         * @param context
+         * @throws IOException
+         * @throws InterruptedException
+         */
         public void reduce(Text key, Iterable<LongWritable> values, Context context)
                 throws IOException, InterruptedException {
             Long views = (long) 0;
@@ -46,6 +65,12 @@ public class AveragePageViews {
         }
     }
 
+    /**
+     * @param args
+     * @throws IOException
+     * @throws ClassNotFoundException
+     * @throws InterruptedException
+     */
     public static void main(String[] args) throws IOException, ClassNotFoundException,
             InterruptedException {
         Configuration conf = new Configuration();
