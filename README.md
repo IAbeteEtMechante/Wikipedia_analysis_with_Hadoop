@@ -84,9 +84,14 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 <!-- POSSIBLE EVOLUTIONS -->
 ## Possible Evolutions
-### Evolution 1
+### Text analysis
+* Analyse the number of pages per language and compare it to the number of speaker of this language
+* Analysis the trending articles
 
-### Evolution 2
+### Network
+* Combine our machines together as a network.
+* We are currently working on Hadoop version 1. We can update to version 2.
+* Use a cloud server to run Hadoop. Digital Ocean seems to be the better choice for ease of use in our case.
 
 <!-- CONTRIBUTING -->
 ## Contributing
