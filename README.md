@@ -1,5 +1,31 @@
-# Project : Data Analysis of Wikipedia using Hadoop
-This is the project for M3-Java (Harbour Space)
+
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/IAbeteEtMechante/Wikipedia_analysis_with_Hadoop">
+    <img src="images/wikipedia_logo.png" alt="Logo" width="80" height="80">
+  </a>
+
+  <h3 align="center">Data Analysis of Wikipedia using Hadoop</h3>
+
+  <p align="center">
+    Using Hadoop and MapReduce to analyse textual Big Data 
+    <br />
+    <a href="https://github.com/IAbeteEtMechante/Wikipedia_analysis_with_Hadoop"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/IAbeteEtMechante/Wikipedia_analysis_with_Hadoop">View Demo</a>
+    ·
+    <a href="https://github.com/IAbeteEtMechante/Wikipedia_analysis_with_Hadoop/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/IAbeteEtMechante/Wikipedia_analysis_with_Hadoop/issues">Request Feature</a>
+  </p>
+</p>
+
+<br>
+<br>
+
+This is our project in Java for the course M3-Java at Harbour Space. We are currently studying Data Science, so we thought it would be interesting to apply what we have learned in Java to crunch some Big Data using MapReduce.
 
 Authors: 
 <li>Patricia Poral</li>
@@ -160,9 +186,10 @@ Project Link: [https://github.com/IAbeteEtMechante/Wikipedia_analysis_with_Hadoo
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
+* To be completed
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [hadoop-screenshot]: images/Screenshot_from_2020-11-17_21-31-09.png
+[wiki-logo]: images/wikipedia_logo.png
 
