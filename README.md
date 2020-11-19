@@ -170,6 +170,7 @@ Not only do we want to check that our MapReduce jobs work properly, but because 
 ## Documentation
 We already implemented an elementary first version of JavaDoc for this project, which is inside the /Javadoc folder. 
 We also have added it as a GitHub Pages website in another repo, which is available here:
+<br>
 _[Documentation](https://iabeteetmechante.github.io/Javadoc_Wikipedia_project/)_
 
 This is still the first version of our JavaDoc, and it needs more information on many classes and methods. We are already working on it and it will be completed during the second phase of the project.
