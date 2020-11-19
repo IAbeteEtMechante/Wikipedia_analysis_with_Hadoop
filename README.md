@@ -114,7 +114,7 @@ where:
 * "/output" is the directory where you want to store the result. Be careful that this directory must be new. You must create a new directory every time 
     you run a new Hadoop job.
     
-_For more examples, please refer to the [Documentation](https://example.com)_
+_For more examples, please refer to the [Documentation](https://iabeteetmechante.github.io/Javadoc_Wikipedia_project/)_
 
 <!-- DESIGN -->
 ## Design
