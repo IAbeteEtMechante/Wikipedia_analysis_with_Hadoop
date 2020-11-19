@@ -25,7 +25,7 @@
 <br>
 <br>
 
-This our project in Java for the course M3-Java at Harbour Space. We are currently studying Data Science, so we thought it would be interesting to apply what we have learned in Java to crunch some Big Data using MapReduce.
+This is our project in Java for the course M3-Java at Harbour Space. We are currently studying Data Science, so we thought it would be interesting to apply what we have learned in Java to crunch some Big Data using MapReduce.
 
 Authors: 
 <li>Patricia Poral</li>
