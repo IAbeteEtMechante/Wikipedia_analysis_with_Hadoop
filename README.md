@@ -11,10 +11,10 @@
   <p align="center">
     Using Hadoop and MapReduce to analyse textual Big Data 
     <br />
-    <a href="https://github.com/IAbeteEtMechante/Wikipedia_analysis_with_Hadoop"><strong>Explore the docs »</strong></a>
+    <a href="https://iabeteetmechante.github.io/Javadoc_Wikipedia_project/"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/IAbeteEtMechante/Wikipedia_analysis_with_Hadoop">View Demo</a>
+    <a href="https://iabeteetmechante.github.io/Javadoc_Wikipedia_project/">View Demo</a>
     ·
     <a href="https://github.com/IAbeteEtMechante/Wikipedia_analysis_with_Hadoop/issues">Report Bug</a>
     ·
