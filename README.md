@@ -168,7 +168,7 @@ Not only do we want to check that our MapReduce jobs work properly, but because 
 
 <!-- DOCUMENTATION -->
 ## Documentation
-We already implemented a first version (super simple) of JavaDoc for this project. we plan to add it as a GitHub pages website, but so far it is not working properly. It will be completed during the second phase of the project.
+We already implemented an elementary first version of JavaDoc for this project, which is inside the /Javadoc folder. We plan to add it as a GitHub pages website, but so far it is not working properly. It will be completed during the second phase of the project.
 
 <!-- CONTRIBUTING -->
 ## Contributing
