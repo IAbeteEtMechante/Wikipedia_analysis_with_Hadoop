@@ -12,8 +12,15 @@ import org.apache.hadoop.util.Tool;
 import org.apache.hadoop.util.ToolRunner; //to run the reduce job
 
 
+
 public class WordCountExplained extends Configured implements Tool {
 
+    /**
+     * Counts the number of occurences of a word in a file.
+     * The long and detailed explanation what the method does.
+     *
+     * @return some pairs: someWord numberOfOccurences.
+     */
     @Override
     public int run(String[] args) throws Exception {
 
