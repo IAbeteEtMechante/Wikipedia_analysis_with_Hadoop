@@ -123,6 +123,11 @@ Modularity is important for the design of our project, and it will be important 
 We have attempted to start doing that by decoupling Map and Reduce in the WordCount.java (and creating the package wordcount to explain those map and reduce jobs), but this is still very much a work in progress.
 Eventually, we think we should have classes for Map jobs, classes for Reduce jobs, and classes for Driver code to combine some Map jobs with some other Reduce jobs.
 
+### Current Design
+This is the current organization of our classes. It will evolve according to the comment above in the MapReduce section:
+
+[![UML Diagram][UML]](https://example.com)
+
 <!-- TESTING -->
 ## Testing
 
@@ -192,4 +197,5 @@ Project Link: [https://github.com/IAbeteEtMechante/Wikipedia_analysis_with_Hadoo
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [hadoop-screenshot]: images/Screenshot_from_2020-11-17_21-31-09.png
 [wiki-logo]: images/wikipedia_logo.png
+[UML]: images/UML_diagram.png
 
