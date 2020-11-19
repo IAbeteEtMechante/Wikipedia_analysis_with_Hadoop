@@ -80,9 +80,9 @@ You can use our out/artifacts/Job/WordCount.jar file and type this on the comman
 hadoop jar <path to:WordCount.jar> WordCount /data/input.txt /output
 ```
 where:
-* <path to:WordCount.jar> is the full path to your copy of WordCount.jar
-* /data/input.txt is the path to the text file you want to count the number of words of
-* /output is the directory where you want to store the result. Be careful that this directory must be new. You must create a new directory every time 
+* "path to:WordCount.jar" is the full path to your copy of WordCount.jar
+* "/data/input.txt" is the path to the text file you want to count the number of words of
+* "/output" is the directory where you want to store the result. Be careful that this directory must be new. You must create a new directory every time 
     you run a new Hadoop job.
     
 _For more examples, please refer to the [Documentation](https://example.com)_
