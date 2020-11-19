@@ -47,6 +47,7 @@ Authors:
 * [Design](#design)
 * [Testing](#testing)
 * [Possible Evolutions](#possible-evolutions)
+* [Documentation](#documentation)
 * [Contributing](#contributing)
 * [License](#license)
 * [Contact](#contact)
@@ -164,6 +165,10 @@ Not only do we want to check that our MapReduce jobs work properly, but because 
 * Combine our machines together as a network.
 * We are currently working on Hadoop version 1. We can update to version 2.
 * Use a cloud server to run Hadoop. Digital Ocean seems to be the better choice for ease of use in our case.
+
+<!-- DOCUMENTATION -->
+## Documentation
+We already implemented a first version (super simple) of JavaDoc for this project. we plan to add it as a GitHub pages website, but so far it is not working properly. It will be completed during the second phase of the project.
 
 <!-- CONTRIBUTING -->
 ## Contributing
