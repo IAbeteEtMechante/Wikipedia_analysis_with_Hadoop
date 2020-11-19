@@ -18,6 +18,7 @@ Authors:
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
 * [Usage](#usage)
+* [Design](#design)
 * [Testing](#testing)
 * [Possible Evolutions](#possible-evolutions)
 * [Contributing](#contributing)
@@ -87,6 +88,14 @@ where:
     you run a new Hadoop job.
     
 _For more examples, please refer to the [Documentation](https://example.com)_
+
+<!-- DESIGN -->
+## Design
+
+### MapReduce
+Modularity is important for the design of our project, and it will be important to create modular Map and Reduce jobs so that we can reuse them between jobs.
+We have attempted to start doing that by decoupling Map and Reduce in the WordCount.java (and creating the package wordcount to explain those map and reduce jobs), but this is still very much a work in progress.
+
 
 <!-- TESTING -->
 ## Testing
