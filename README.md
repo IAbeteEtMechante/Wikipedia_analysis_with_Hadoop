@@ -64,11 +64,12 @@ You can follow instructions here:
 
 ### How to use our repo
 
-1. Get a free API Key for wikipedia [https://wikipedia.com](https://wikipedia.com)
+1. Clone the repo
+2. Intall Hadoop
+3. Use WikipediaCrawler.java to get some data from WikiPedia
+4. Put those data files on your Hadoop HDFS (if you have multinodes, use them!)
+5. Use our MapRedude jobs (.jars) to analyse those files
 
-2. Clone the repo
-
-3....
 
 
 <!-- USAGE EXAMPLES -->
