@@ -50,7 +50,14 @@ Here are the major frameworks that we built our project with.
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Need Hadoop
+
+### How to use our repo
+
+1. Clone the repo
+2. Intall Hadoop
+3. Use WikipediaCrawler.java to get some data from WikiPedia
+4. Put those data files on your Hadoop HDFS (if you have multinodes, use them!)
+5. Use our MapRedude jobs (.jars) to analyse those files
 
 ### How to install Hadoop
 We recommend to start with the single node implementation (Standalone) on Hadoop version 1. 
@@ -60,15 +67,6 @@ This is a multistep process that we will not describe in detail here.
 You can follow instructions here:
 
 [Hadoop installation](https://phoenixnap.com/kb/install-hadoop-ubuntu)
-
-
-### How to use our repo
-
-1. Clone the repo
-2. Intall Hadoop
-3. Use WikipediaCrawler.java to get some data from WikiPedia
-4. Put those data files on your Hadoop HDFS (if you have multinodes, use them!)
-5. Use our MapRedude jobs (.jars) to analyse those files
 
 
 
