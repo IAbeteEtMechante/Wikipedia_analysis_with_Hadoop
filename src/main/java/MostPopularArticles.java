@@ -1,5 +1,3 @@
-
-
 import java.io.IOException;
 import org.apache.commons.lang.StringUtils;
 import org.apache.hadoop.conf.Configuration;
@@ -13,17 +11,14 @@ import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
-public class AveragePageViews {
-    public static class AveragePageViewsMap extends Mapper<LongWritable, Text, Text, LongWritable> {
+public class MostPopularArticles {
+    public static class MostPopularArticlesMap
+            extends Mapper<LongWritable, Text, Text, LongWritable> {
 
         @Override
         public void map(LongWritable key, Text value, Context context)
                 throws IOException, InterruptedException {
-            String delims = ",";
-            String[] wikiData = StringUtils.split(value.toString(), delims);
-            Text article = new Text();
-            LongWritable views = new LongWritable(Long.parseLong(wikiData[2]));
-            context.write(article, views);
+
         }
 
         @Override
@@ -31,18 +26,11 @@ public class AveragePageViews {
         }
     }
 
-    public static class AveragePageViewsReduce extends
+    public static class MostPopularArticlesReduce extends
             Reducer<Text, LongWritable, Text, DoubleWritable> {
         public void reduce(Text key, Iterable<LongWritable> values, Context context)
                 throws IOException, InterruptedException {
-            Long views = (long) 0;
-            Long count = (long) 0;
-            for (LongWritable t : values) {
-                views += t.get();
-                count++;
-            }
-            Double average = ((double) views / (double) count);
-            context.write(key, new DoubleWritable(average));
+
         }
     }
 
@@ -50,9 +38,9 @@ public class AveragePageViews {
             InterruptedException {
         Configuration conf = new Configuration();
         Job job = Job.getInstance(conf, "countWikipedia");
-        job.setJarByClass(AveragePageViews.class);
-        job.setMapperClass(AveragePageViewsMap.class);
-        job.setReducerClass(AveragePageViewsReduce.class);
+        job.setJarByClass(MostPopularArticles.class);
+        job.setMapperClass(MostPopularArticlesMap.class);
+        job.setReducerClass(MostPopularArticlesReduce.class);
         job.setOutputKeyClass(Text.class);
         job.setMapOutputValueClass(LongWritable.class);
         job.setOutputValueClass(LongWritable.class);
