@@ -220,9 +220,11 @@ Project Link: [https://github.com/IAbeteEtMechante/Wikipedia_analysis_with_Hadoo
 
 ### Project Milestone 1
 
-Initially we planned to divide the tasks by module and person (Duc) (Pierre: MapReduce codes, Patricia: analyses on the resulting data from MapReduce, and Duc on code testing). However, due to time constraint of the project, the team switched to work jointly on each of those modules.
+Initially we planned to divide the tasks by module and person (Pierre: MapReduce codes, Patricia: analyses on the resulting data from MapReduce, and Duc on code testing). However, due to time constraint of the project, the team switched to work jointly on each of those modules.
 
-### From Milestone 1 to Demo Day (tentative)
+### From Milestone 1 to Demo Day
+The tentative plan for task allocation until project completions are as follow:
+
 Collective tasks:
 * Setting up Hadoop and link computers into 1 network
 * Setting up cloud machines
