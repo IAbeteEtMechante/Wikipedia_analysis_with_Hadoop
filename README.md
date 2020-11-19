@@ -116,6 +116,10 @@ We need to test that the MapReduce process works properly. This is partly done w
 ###  Hadoop tests
 A described above in the Usage section, we can also run our .jar files on our Hadoop Standalone installations, and run some tests using bash scripts on it. 
 
+Here is how it looks like in Hadoop 1, this is the result of our first test of the WordCount MapReduce job:
+
+[![Product Name Screen Shot][hadoop-screenshot]](https://example.com)
+
 ### Performance tests
 Not only do we want to check that our MapReduce jobs work properly, but because we are dealing with Big Data and we are trying to launch our project on a Network, it is important to also run some performance tests. It involves measuring the speed of our jobs, and also testing with bigger volumes of data.
 
@@ -160,5 +164,5 @@ Project Link: [https://github.com/IAbeteEtMechante/Wikipedia_analysis_with_Hadoo
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=flat-square
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
+[hadoop-screenshot]: images/Screenshot_from_2020-11-17_21-31-09.png
+
