@@ -48,12 +48,12 @@ Authors:
 * [Testing](#testing)
 * [Possible Evolutions](#possible-evolutions)
 * [Documentation](#documentation)
-* [Contributing](#contributing)
-* [License](#license)
-* [Contact](#contact)
 * [Workload Allocation](#workload-allocation)
   * [Project Milestone 1](#project-milestone-1)
   * [From Milestone 1 to Demo Day](#from-milestone-1-to-demo-day)
+* [Contributing](#contributing)
+* [License](#license)
+* [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
 
 
@@ -75,7 +75,7 @@ Plan of work:
 Here are the major frameworks that we built our project with.
 * [AQS Pageviews](https://wikitech.wikimedia.org/wiki/Analytics/AQS/Pageviews)
 * [Hadoop](https://hadoop.com)
-* [GSON](https://gson.com)
+* [GSON](https://gson.com) (not yet, but it is one of our goals)
 
 
 <!-- GETTING STARTED -->
@@ -191,10 +191,44 @@ _[Documentation](https://iabeteetmechante.github.io/Javadoc_Wikipedia_project/)_
 
 This is still the first version of our JavaDoc, and it needs more information on many classes and methods. We are already working on it and it will be completed during the second phase of the project.
 
+<!-- WORKLOAD ALLOCATION -->
+## Workload Allocation
+
+
+### Project Milestone 1
+
+Initially, we planned to divide the tasks by module and person:
+* Pierre: MapReduce
+* Patricia: analysis built on the resulting data from MapReduce
+* Duc: testing
+
+However, due to time constraint of the project, the team switched to work jointly on each of those modules, because we understood our work was very interdependent.
+
+### From Milestone 1 to Demo Day
+
+The tentative plan for task allocation until project completions are as follow:
+
+* Collective tasks:
+  * Setting up Hadoop and link computers into a network
+  * Possibly switch to Hadoop version 2
+  * Setting up cloud machines
+
+* Duc:
+  * MapReduce code for crawling data and analyze language popularities
+
+* Patricia:
+  * MapReduce code for crawling data and analyze trending topics
+
+* Pierre:
+  * Testing
+  
+ We will try just for a day or two to see if we can work like this, or if we have to switch back to grouping our efforts on the same tasks at the same time.
+
+
 <!-- CONTRIBUTING -->
 ## Contributing
 
-Contributions are what will make the project better. Any contributions you make are **greatly appreciated**.
+If you are interested in this topic, you too can contribute to this work. Contributions are what will make the project better. Any contributions you make are **greatly appreciated**.
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -214,29 +248,6 @@ Feel free to contact us on this repo, we are happy to hear from you.
 
 Project Link: [https://github.com/IAbeteEtMechante/Wikipedia_analysis_with_Hadoop](https://github.com/IAbeteEtMechante/Wikipedia_analysis_with_Hadoop)
 
-<!-- WORKLOAD ALLOCATION -->
-## Workload Allocation
-
-
-### Project Milestone 1
-
-Initially we planned to divide the tasks by module and person (Pierre: MapReduce codes, Patricia: analyses on the resulting data from MapReduce, and Duc on code testing). However, due to time constraint of the project, the team switched to work jointly on each of those modules.
-
-### From Milestone 1 to Demo Day
-The tentative plan for task allocation until project completions are as follow:
-
-Collective tasks:
-* Setting up Hadoop and link computers into 1 network
-* Setting up cloud machines
-
-Duc:
-* MapReduce code for crawling data and analyze language popularities
-
-Patricia:
-* MapReduce code for crawling data and analyze trending topics
-
-Pierre:
-* Testings
 
 
 
