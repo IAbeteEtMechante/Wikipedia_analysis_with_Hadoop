@@ -216,6 +216,7 @@ The tentative plan for task allocation until project completions are as follow:
   * Setting up Hadoop and link computers into a network
   * Possibly switch to Hadoop version 2
   * Setting up cloud machines
+  * Add JavaDoc comments to all java files
 
 * Duc:
   * MapReduce code for crawling data and analyze language popularities
@@ -224,7 +225,7 @@ The tentative plan for task allocation until project completions are as follow:
   * MapReduce code for crawling data and analyze trending topics
 
 * Pierre:
-  * Testing: jUnit tests but also testing techniques specific to Big Data
+  * Testing: jUnit tests of course, but also testing techniques specific to Big Data
   
  We will try just for a day or two to see if we can work like this, or if we have to switch back to grouping our efforts on the same tasks at the same time.
 
