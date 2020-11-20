@@ -198,9 +198,9 @@ This is still the first version of our JavaDoc, and it needs more information on
 ### Project Milestone 1
 
 Initially, we planned to divide the tasks by module and person:
-* Pierre: MapReduce
-* Patricia: analysis built on the resulting data from MapReduce
-* Duc: testing
+* Pierre      -->   MapReduce
+* Patricia    -->   Analysis built on the resulting data from MapReduce
+* Duc         -->   Testing
 
 However, due to time constraint of the project, the team switched to work jointly on each of those modules, because we understood our work was very interdependent.
 
