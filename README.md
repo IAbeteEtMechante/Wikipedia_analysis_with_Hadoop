@@ -198,34 +198,37 @@ This is still the first version of our JavaDoc, and it needs more information on
 ### Project Milestone 1
 
 Initially, we planned to divide the tasks by module and person:
-* Pierre: MapReduce codes
-* Patricia: analyses on the resulting data from MapReduce
+* Pierre: MapReduce
+* Patricia: analysis built on the resulting data from MapReduce
 * Duc: testing
 
-However, due to time constraint of the project, the team switched to work jointly on each of those modules, because we understood our work had to be more interdependent.
+However, due to time constraint of the project, the team switched to work jointly on each of those modules, because we understood our work was very interdependent.
 
 ### From Milestone 1 to Demo Day
 
 The tentative plan for task allocation until project completions are as follow:
 
-Collective tasks:
-* Setting up Hadoop and link computers into 1 network
-* Setting up cloud machines
+* Collective tasks:
+  * Setting up Hadoop and link computers into a network
+  * Possibly switch to Hadoop version 2
+  * Setting up cloud machines
 
-Duc:
-* MapReduce code for crawling data and analyze language popularities
+* Duc:
+  * MapReduce code for crawling data and analyze language popularities
 
-Patricia:
-* MapReduce code for crawling data and analyze trending topics
+* Patricia:
+  * MapReduce code for crawling data and analyze trending topics
 
-Pierre:
-* Testings
+* Pierre:
+  * Testing
+  
+ We will try just for a day or two to see if we can work like this, or if we have to switch back to grouping our efforts on the same tasks at the same time.
 
 
 <!-- CONTRIBUTING -->
 ## Contributing
 
-Contributions are what will make the project better. Any contributions you make are **greatly appreciated**.
+If you are interested in this topic, you too can contribute to this work. Contributions are what will make the project better. Any contributions you make are **greatly appreciated**.
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
