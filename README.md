@@ -206,6 +206,10 @@ However, due to time constraint of the project, the team switched to work jointl
 
 ### From Milestone 1 to Demo Day
 
+Given that in the first phase of the project, we switched from specific task allocation (each task to one person only) to a joint effort on all tasks, it may seem counterintuitive to switch back to specific task allocation in the second phase.
+But this is what we will try to do:)
+The reason is that the project is a bit more advanced, and we already got some general knowledge about the subject to help us accomplish later tasks even if previous tasks are not completed yet. Also specific task allocation present some benefits where we can work more autonomously instead of having to chat continuously with others about what we are doing. And it is more satisfying to accomplish a whole task for each member of the team.
+
 The tentative plan for task allocation until project completions are as follow:
 
 * Collective tasks:
