@@ -75,7 +75,7 @@ Plan of work:
 Here are the major frameworks that we built our project with.
 * [AQS Pageviews](https://wikitech.wikimedia.org/wiki/Analytics/AQS/Pageviews)
 * [Hadoop](https://hadoop.com)
-* [GSON](https://gson.com)
+* [GSON](https://gson.com) (not yet, but it is one of our goals)
 
 
 <!-- GETTING STARTED -->
