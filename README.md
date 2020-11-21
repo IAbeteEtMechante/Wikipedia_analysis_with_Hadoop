@@ -88,7 +88,8 @@ Here are the major frameworks that we built our project with.
 2. Intall Hadoop
 3. Use WikipediaCrawler.java to get some data from WikiPedia
 4. Put those data files on your Hadoop HDFS (if you have multinodes, use them!)
-5. Use our MapRedude jobs (.jars) to analyse those files
+5. Create .jar files from our .java code (optional, because you can also use our .jar files directly if you want to)
+6. Use the .jars files to analyse the data on HDFS with Hadoop
 
 ### How to install Hadoop
 We recommend to start with the single node implementation (Standalone) on Hadoop version 1. 
@@ -104,7 +105,40 @@ You can follow instructions here:
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-### Count the number of words in a file
+### How to build .jar files from our .java files
+
+You could use directly use our .jar files if you want, but it is interesting to be able to create your own .jar files directly.
+For that, we made a bash script (makeJarFiles.sh) that can build the .jar files from the .java files.
+Here is how to use that script:
+
+* First you need to create a directory, and put all the .java files you want inside it
+```sh
+mkdir yourAwesomeDirectoryName
+cd yourAwesomeDirectoryName
+cp /path/to/java/files/*.java .
+```
+
+* Then you want to put the bash script inside it, and give it execution rights
+```sh
+cp /path/to/bashscript/makeJarFiles.sh* .
+chmod +x makeJarFiles.sh
+```
+* You also want to modify the script content and change /usr/local/hadoop to your own hadoop installation location.
+We put vim as an example, but feel free to use the text editor of your preference.
+```sh
+vim makeJarFiles.sh
+```
+Once you opened with the editor and made the change to your hadoop path, you can are ready to use the script:
+
+```sh
+./makeJarFiles.sh
+```
+
+It will create a Job.jar file inside your directory. Feel free to rename it. A good choice of name would be the name of the main class in your .java files, beause you will need to remember it to run the .jar file in the next step.
+
+
+
+### Use the .jar files to run jobs on Hadoop
 To understand how to use the .jar files created from our java code, let's consider that you want to count the number of words in a file.
 You can use our out/artifacts/Job/WordCount.jar file and type this on the command line on Ubuntu/MacOS:
 ```sh
