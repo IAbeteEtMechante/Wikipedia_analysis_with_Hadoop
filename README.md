@@ -109,6 +109,7 @@ You can follow instructions here:
 You can build .jar files from our .java files, either with gradle, or with our dedicated bash script
 
 #### Use gradle
+To be completed
 
 #### Use our bash script
 You could use directly use our .jar files if you want, but it is interesting to be able to create your own .jar files directly.
