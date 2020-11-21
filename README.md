@@ -106,7 +106,11 @@ You can follow instructions here:
 ## Usage
 
 ### How to build .jar files from our .java files
+You can build .jar files from our .java files, either with gradle, or with our dedicated bash script
 
+#### Use gradle
+
+#### Use our bash script
 You could use directly use our .jar files if you want, but it is interesting to be able to create your own .jar files directly.
 For that, we made a bash script (makeJarFiles.sh) that can build the .jar files from the .java files.
 Here is how to use that script:
