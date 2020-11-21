@@ -120,7 +120,7 @@ cp /path/to/java/files/*.java .
 
 * Then you want to put the bash script inside it, and give it execution rights
 ```sh
-cp /path/to/bashscript/makeJarFiles.sh* .
+cp /path/to/bashscript/makeJarFiles.sh .
 chmod +x makeJarFiles.sh
 ```
 * You also want to modify the script content and change /usr/local/hadoop to your own hadoop installation location.
