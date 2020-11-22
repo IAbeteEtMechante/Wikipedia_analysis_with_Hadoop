@@ -15,13 +15,11 @@ import org.json.JSONObject;
 
 public class WikipediaCrawler {
 
-    private final String userAgent = "Mozilla/5.0";
-
     public static void main(String[] args) throws Exception {
-        prepUrl("articles", "2015100100", "2015103100");
+        prepUrl("articles", "2019120100", "2020112200");
     }
 
-    private String sendGet(String url) throws Exception {
+    public static String sendGet(String url) throws Exception {
 
         URL obj = new URL(url);
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
@@ -30,33 +28,43 @@ public class WikipediaCrawler {
         con.setRequestMethod("GET");
 
         //add request header
-        con.setRequestProperty("User-Agent", userAgent);
+        con.setRequestProperty("User-Agent", "Mozilla/5.0");
 
         int responseCode = con.getResponseCode();
         //System.out.println("\nSending 'GET' request to URL : " + url);
 
-        BufferedReader in = new BufferedReader(
-                new InputStreamReader(con.getInputStream()));
-        String inputLine;
-        StringBuffer response = new StringBuffer();
+        try {
+            BufferedReader in = new BufferedReader(
+                    new InputStreamReader(con.getInputStream()));
 
-        while ((inputLine = in.readLine()) != null) {
-            response.append(inputLine);
+            String inputLine;
+            StringBuffer response = new StringBuffer();
+
+            while ((inputLine = in.readLine()) != null) {
+                response.append(inputLine);
+            }
+            in.close();
+
+            return response.toString();
+
+        } catch (Exception e) {
+            return null;
         }
-        in.close();
 
-        return response.toString();
+
     }
 
-    public static String parseFromJsonResponse(String respo) {
+    public static String parseFromJsonResponse(String response) {
+        System.out.println(response);
         JSONObject myjson;
         String result = "";
         try {
-            myjson = new JSONObject(respo);
-            for (int i = 0; i < 30; i++) {
+            myjson = new JSONObject(response);
+            for (int i = 0; i < 357; i++) {
                 JSONObject res = myjson.getJSONArray("items").getJSONObject(i);
-                result = res.getString("article")
-                        + "," + res.getString("timestamp").substring(0, 8)
+                System.out.println(res.getString("article"));
+                result = res.getString("article") + ","
+                        + res.getString("timestamp").substring(0, 8)
                         + "," + res.getLong("views");
 
                 try (FileWriter fw = new FileWriter("wikicounts", true);
@@ -67,8 +75,8 @@ public class WikipediaCrawler {
                     e.printStackTrace();
                 }
             }
-        } catch (JSONException e) {
-            e.printStackTrace();
+        } catch (Exception e) {
+            // do nothing
         }
         return result;
     }
