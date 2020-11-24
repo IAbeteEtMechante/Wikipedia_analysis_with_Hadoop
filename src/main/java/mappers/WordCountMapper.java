@@ -25,9 +25,9 @@ public class WordCountMapper extends Mapper<Object, Text, Text, IntWritable> {
     /** Map Function
      * Maps every input to record one.
      *
-     * @param key
-     * @param value
-     * @param context
+     * @param key is the word from Wikipedia article.
+     * @param value is set to one to represent the count of word.
+     * @param context is the map containing the words and corresponding value of one.
      * @throws IOException if map cannot be written or closed.
      * @throws InterruptedException if interrupted while processing.
      */

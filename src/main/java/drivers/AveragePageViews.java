@@ -35,7 +35,7 @@ public class AveragePageViews {
          * @param value
          * @param context
          * @throws IOException if map cannot be written or closed.
-         * @throws InterruptedException
+         * @throws InterruptedException if interrupted while processing.
          */
 
         @Override
@@ -71,7 +71,7 @@ public class AveragePageViews {
          * @param values
          * @param context
          * @throws IOException if reduce cannot be written or closed.
-         * @throws InterruptedException
+         * @throws InterruptedException if interrupted while processing.
          */
 
         public void reduce(Text key, Iterable<LongWritable> values, Context context)
@@ -89,10 +89,10 @@ public class AveragePageViews {
 
     /** Setting up the job for average page views.
      *
-     * @param args
+     * @param args an array of command-line arguments for the application.
      * @throws IOException if main cannot be closed.
-     * @throws ClassNotFoundException
-     * @throws InterruptedException
+     * @throws ClassNotFoundException if tries to load in a class through its string name.
+     * @throws InterruptedException if interrupted while processing.
      */
 
     public static void main(String[] args) throws IOException, ClassNotFoundException,

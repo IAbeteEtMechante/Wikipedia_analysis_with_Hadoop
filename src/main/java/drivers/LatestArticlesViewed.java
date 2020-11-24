@@ -30,7 +30,7 @@ public class LatestArticlesViewed {
 
         /** Map Function of the program.
          *
-         * @param key
+         * @param key is title of an article from Wikipedia.
          * @param value
          * @param context
          * @throws IOException if map cannot be written or closed.
@@ -72,9 +72,9 @@ public class LatestArticlesViewed {
 
     /** Setting up the job for latest articles viewed.
      *
-     * @param args
+     * @param args an array of command-line arguments for the application.
      * @throws IOException if main cannot be closed.
-     * @throws ClassNotFoundException
+     * @throws ClassNotFoundException if tries to load in a class through its string name.
      * @throws InterruptedException if interrupted while processing.
      */
 

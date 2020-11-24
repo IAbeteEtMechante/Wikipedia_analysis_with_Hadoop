@@ -25,7 +25,7 @@ public class MostUsedWords {
 
     /** Setting up the job for most used words.
      *
-     * @param args
+     * @param args an array of command-line arguments for the application.
      * @throws Exception
      */
 

@@ -30,9 +30,10 @@ public class MostPopularArticles {
 
         /** Map Function of the program.
          *
-         * @param key
-         * @param value
-         * @param context
+         * @param key is title of article from Wikipedia.
+         * @param value is the page views of the article.
+         * @param context is the map containing article title and sum of
+         *                its page views from Wikipedia.
          * @throws IOException if map cannot be written or closed.
          * @throws InterruptedException if interrupted while processing.
          */
@@ -44,7 +45,8 @@ public class MostPopularArticles {
 
         /** Read and setup the parameters.
          *
-         * @param context
+         * @param context is the map containing the article title and its
+         *                corresponding sum of page views.
          * @throws IOException if setup cannot be closed.
          * @throws InterruptedException if interrupted while processing.
          */
@@ -60,9 +62,9 @@ public class MostPopularArticles {
         /** Reduce Function of the program.
          * Aggregate articles with highest views.
          *
-         * @param key
-         * @param values
-         * @param context
+         * @param key is title of article from Wikipedia.
+         * @param values is the page views of the article.
+         * @param context is the map containing summary of data.
          * @throws IOException if reduce cannot be written or closed.
          * @throws InterruptedException if interrupted while processing.
          */
@@ -74,9 +76,9 @@ public class MostPopularArticles {
 
     /** Setting up the job for most popular articles.
      *
-     * @param args
+     * @param args an array of command-line arguments for the application.
      * @throws IOException if main cannot be closed.
-     * @throws ClassNotFoundException
+     * @throws ClassNotFoundException if tries to load in a class through its string name.
      * @throws InterruptedException if interrupted while processing.
      */
 

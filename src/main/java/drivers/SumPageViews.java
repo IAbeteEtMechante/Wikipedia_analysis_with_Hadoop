@@ -33,9 +33,10 @@ public class SumPageViews {
         /** Map Function of the program.
          * Maps input to article title and views.
          *
-         * @param key
-         * @param value
-         * @param context
+         * @param key is title of article from Wikipedia.
+         * @param value is the page views of the aricle.
+         * @param context is the map containing the article title and its
+         *                corresponding page views.
          * @throws IOException if map cannot be written or closed.
          * @throws InterruptedException if interrupted while processing.
          */
@@ -52,7 +53,8 @@ public class SumPageViews {
 
         /** Read and setup the parameters.
          *
-         * @param context
+         * @param context is the map containing the article title and its
+         *                corresponding page views.
          * @throws IOException if setup cannot be closed.
          * @throws InterruptedException if interrupted while processing.
          */
@@ -68,9 +70,10 @@ public class SumPageViews {
         /** Reduce Function of the program.
          * Aggregation of results.
          *
-         * @param key
-         * @param values
-         * @param context
+         * @param key is the title of article in Wikipedia.
+         * @param values is the converted data type of page views.
+         * @param context is the map containing title of articles in Wikipedia
+         *                and its sum of page views.
          * @throws IOException if reduce cannot be written or closed.
          * @throws InterruptedException if interrupted while processing.
          */
@@ -87,7 +90,7 @@ public class SumPageViews {
 
     /**
      * @throws IOException if main cannot be closed.
-     * @throws ClassNotFoundException
+     * @throws ClassNotFoundException if tries to load in a class through its string name.
      * @throws InterruptedException if interrupted while processing.
      */
 
@@ -98,9 +101,9 @@ public class SumPageViews {
 
     /** Setting up the job for latest articles viewed.
      *
-     * @param args
-     * @throws IOException
-     * @throws ClassNotFoundException
+     * @param args an array of command-line arguments for the application.
+     * @throws IOException if main cannot be closed.
+     * @throws ClassNotFoundException if tries to load in a class through its string name.
      * @throws InterruptedException if interrupted while processing.
      */
 
