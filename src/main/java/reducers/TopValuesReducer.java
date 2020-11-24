@@ -1,4 +1,4 @@
-/** MapReduce Program - file TopValuesReducer.java
+/* MapReduce Program - file TopValuesReducer.java
  * Authors:
  * Duc Pham
  * Patricia Poral

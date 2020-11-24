@@ -1,4 +1,4 @@
-/** MapReduce Program - file MiscUtils.java
+/* MapReduce Program - file MiscUtils.java
  * Authors:
  * Duc Pham
  * Patricia Poral

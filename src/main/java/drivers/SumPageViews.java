@@ -1,4 +1,4 @@
-/** MapReduce Program - file SumPageViews.java
+/* MapReduce Program - file SumPageViews.java
  * Authors:
  * Duc Pham
  * Patricia Poral

@@ -1,4 +1,4 @@
-/** MapReduce Program - file MostPopularArticles.java
+/* MapReduce Program - file MostPopularArticles.java
  * Authors:
  * Duc Pham
  * Patricia Poral

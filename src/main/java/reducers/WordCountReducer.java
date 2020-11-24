@@ -1,4 +1,4 @@
-/** MapReduce Program - file WordCountReducer.java
+/* MapReduce Program - file WordCountReducer.java
  * Authors:
  * Duc Pham
  * Patricia Poral

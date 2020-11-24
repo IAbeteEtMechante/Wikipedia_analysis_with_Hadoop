@@ -1,4 +1,4 @@
-/** MapReduce Program - file MostUsedWords.java
+/* MapReduce Program - file MostUsedWords.java
  * Authors:
  * Duc Pham
  * Patricia Poral

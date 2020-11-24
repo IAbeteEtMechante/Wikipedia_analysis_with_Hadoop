@@ -1,4 +1,4 @@
-/** MapReduce Program - file LatestArticlesViewed.java
+/* MapReduce Program - file LatestArticlesViewed.java
  * Authors:
  * Duc Pham
  * Patricia Poral

@@ -1,4 +1,4 @@
-/** MapReduce Program - file AveragePageViews.java
+/* MapReduce Program - file AveragePageViews.java
  * Authors:
  * Duc Pham
  * Patricia Poral
