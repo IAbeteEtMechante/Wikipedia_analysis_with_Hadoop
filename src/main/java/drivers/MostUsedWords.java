@@ -39,7 +39,7 @@ public class MostUsedWords {
     public static void main(String[] args) throws Exception {
         Configuration conf = new Configuration();
 
-        /** Create a configuration for the job
+        /* Create a configuration for the job
          */
 
         String[] otherArgs = new GenericOptionsParser(conf, args).getRemainingArgs();
@@ -50,26 +50,26 @@ public class MostUsedWords {
         Job job = Job.getInstance(conf);
         job.setJobName("Top N Enhanced");
 
-        /**Set relevant jar were class specified as it's
+        /* Set relevant jar were class specified as it's
          * parameter is present as part of that jar.
          */
 
         job.setJarByClass(MostUsedWords.class);
 
-        /** Set name of Mapper and Reducer class to
+        /* Set name of Mapper and Reducer class to
          * MostUsedWords.class
          */
 
         job.setMapperClass(mappers.WordCountMapper.class);
         job.setReducerClass(reducers.TopValuesReducer.class);
 
-        /** Specify the data type of of output key and value
+        /* Specify the data type of of output key and value
          */
 
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
 
-        /** Setting input and output directories using command line arguments.
+        /* Setting input and output directories using command line arguments.
          * arg[0] = name of input directory on HDFS
          * arg[1] =  name of output directory to be created to store the output file
          */

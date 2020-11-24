@@ -107,33 +107,33 @@ public class SumPageViews {
     public static void main(String[] args) throws IOException, ClassNotFoundException,
             InterruptedException {
 
-        /** Create a configuration for the job
+        /* Create a configuration for the job
          */
 
         Configuration conf = new Configuration();
         Job job = Job.getInstance(conf, "countWikipedia");
 
-        /**Set relevant jar were class specified as it's
+        /* Set relevant jar were class specified as it's
          * parameter is present as part of that jar.
          */
 
         job.setJarByClass(SumPageViews.class);
 
-        /** Set name of Mapper and Reducer class to
+        /* Set name of Mapper and Reducer class to
          * SumPageViews.class
          */
 
         job.setMapperClass(SumPageViewsMap.class);
         job.setReducerClass(SumPageViewsReduce.class);
 
-        /** Specify the data type of of output key and value
+        /* Specify the data type of of output key and value
          */
 
         job.setOutputKeyClass(Text.class);
         job.setMapOutputValueClass(LongWritable.class);
         job.setOutputValueClass(LongWritable.class);
 
-        /** Setting input and output directories using command line arguments.
+        /* Setting input and output directories using command line arguments.
          * arg[0] = name of input directory on HDFS
          * arg[1] =  name of output directory to be created to store the output file
          */
