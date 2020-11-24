@@ -36,8 +36,8 @@ public class SumPageViews {
          * @param key
          * @param value
          * @param context
-         * @throws IOException
-         * @throws InterruptedException
+         * @throws IOException if map cannot be written or closed.
+         * @throws InterruptedException if interrupted while processing.
          */
 
         @Override
@@ -53,8 +53,8 @@ public class SumPageViews {
         /** Read and setup the parameters.
          *
          * @param context
-         * @throws IOException
-         * @throws InterruptedException
+         * @throws IOException if setup cannot be closed.
+         * @throws InterruptedException if interrupted while processing.
          */
 
         @Override
@@ -71,8 +71,8 @@ public class SumPageViews {
          * @param key
          * @param values
          * @param context
-         * @throws IOException
-         * @throws InterruptedException
+         * @throws IOException if reduce cannot be written or closed.
+         * @throws InterruptedException if interrupted while processing.
          */
 
         public void reduce(Text key, Iterable<LongWritable> values, Context context)
@@ -86,9 +86,9 @@ public class SumPageViews {
     }
 
     /**
-     * @throws IOException
+     * @throws IOException if main cannot be closed.
      * @throws ClassNotFoundException
-     * @throws InterruptedException
+     * @throws InterruptedException if interrupted while processing.
      */
 
     public static void main() throws IOException, ClassNotFoundException,
@@ -101,7 +101,7 @@ public class SumPageViews {
      * @param args
      * @throws IOException
      * @throws ClassNotFoundException
-     * @throws InterruptedException
+     * @throws InterruptedException if interrupted while processing.
      */
 
     public static void main(String[] args) throws IOException, ClassNotFoundException,

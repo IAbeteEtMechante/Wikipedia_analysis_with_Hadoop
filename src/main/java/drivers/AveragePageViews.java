@@ -34,7 +34,7 @@ public class AveragePageViews {
          * @param key
          * @param value
          * @param context
-         * @throws IOException
+         * @throws IOException if map cannot be written or closed.
          * @throws InterruptedException
          */
 
@@ -51,7 +51,7 @@ public class AveragePageViews {
         /** Read and setup the parameters.
          *
          * @param context
-         * @throws IOException
+         * @throws IOException if setup cannot be closed.
          * @throws InterruptedException
          */
 
@@ -70,7 +70,7 @@ public class AveragePageViews {
          * @param key
          * @param values
          * @param context
-         * @throws IOException
+         * @throws IOException if reduce cannot be written or closed.
          * @throws InterruptedException
          */
 
@@ -90,7 +90,7 @@ public class AveragePageViews {
     /** Setting up the job for average page views.
      *
      * @param args
-     * @throws IOException
+     * @throws IOException if main cannot be closed.
      * @throws ClassNotFoundException
      * @throws InterruptedException
      */

@@ -33,14 +33,20 @@ public class LatestArticlesViewed {
          * @param key
          * @param value
          * @param context
-         * @throws IOException
-         * @throws InterruptedException
+         * @throws IOException if map cannot be written or closed.
+         * @throws InterruptedException if interrupted while processing.
          */
 
         @Override
         public void map(LongWritable key, Text value, Context context)
                 throws IOException, InterruptedException {
         }
+
+        /**
+         * @param context
+         * @throws IOException if setup cannot be closed.
+         * @throws InterruptedException if interrupted while processing.
+         */
 
         @Override
         protected void setup(Context context) throws IOException, InterruptedException {
@@ -55,8 +61,8 @@ public class LatestArticlesViewed {
          * @param key
          * @param values
          * @param context
-         * @throws IOException
-         * @throws InterruptedException
+         * @throws IOException if reduce cannot be written or closed.
+         * @throws InterruptedException if interrupted while processing.
          */
 
         public void reduce(Text key, Iterable<LongWritable> values, Context context)
@@ -67,9 +73,9 @@ public class LatestArticlesViewed {
     /** Setting up the job for latest articles viewed.
      *
      * @param args
-     * @throws IOException
+     * @throws IOException if main cannot be closed.
      * @throws ClassNotFoundException
-     * @throws InterruptedException
+     * @throws InterruptedException if interrupted while processing.
      */
 
     public static void main(String[] args) throws IOException, ClassNotFoundException,

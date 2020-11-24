@@ -28,11 +28,11 @@ public class TopValuesReducer extends Reducer<Text, IntWritable, Text, IntWritab
      * Outputs the sum of every word used
      * in Wikipedia article.
      *
-     * @param key
-     * @param values
-     * @param context
-     * @throws IOException
-     * @throws InterruptedException
+     * @param key is the word from Wikipedia articles.
+     * @param values is the sum of count of words in a Wikipedia article.
+     * @param context is the map containing summary of data.
+     * @throws IOException if reduce cannot be written or closed.
+     * @throws InterruptedException if interrupted while processing.
      */
 
     @Override
@@ -51,12 +51,12 @@ public class TopValuesReducer extends Reducer<Text, IntWritable, Text, IntWritab
         countMap.put(new Text(key), new IntWritable(sum));
     }
 
-    /** Writes the result of every
+    /** Writes and sort the result of every
      * processed partition.
      *
-     * @param context
-     * @throws IOException
-     * @throws InterruptedException
+     * @param context is the map containing the summary of sorted data.
+     * @throws IOException if cleanup cannot be closed.
+     * @throws InterruptedException if interrupted while processing.
      */
 
     @Override

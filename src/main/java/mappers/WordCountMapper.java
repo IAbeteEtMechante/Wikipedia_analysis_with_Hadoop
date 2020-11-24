@@ -28,8 +28,8 @@ public class WordCountMapper extends Mapper<Object, Text, Text, IntWritable> {
      * @param key
      * @param value
      * @param context
-     * @throws IOException
-     * @throws InterruptedException
+     * @throws IOException if map cannot be written or closed.
+     * @throws InterruptedException if interrupted while processing.
      */
 
     public void map(Object key, Text value, Context context)

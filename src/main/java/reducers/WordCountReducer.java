@@ -13,7 +13,6 @@ import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
 
-
 /** Reducer class for MapReduce program
  * of MostUsedWords.java
  */
@@ -25,11 +24,11 @@ public class WordCountReducer extends Reducer<Text, IntWritable, Text, IntWritab
      * Aggregation of results.
      * Outputs the total count of a word in article.
      *
-     * @param key
-     * @param values
-     * @param context
-     * @throws IOException
-     * @throws InterruptedException
+     * @param key is the word from Wikipedia articles.
+     * @param values is the sum of count of words in a Wikipedia article.
+     * @param context is the map containing summary of data.
+     * @throws IOException if reduce cannot be written or closed.
+     * @throws InterruptedException if interrupted while processing.
      */
 
     public void reduce(Text key, Iterable<IntWritable> values,
