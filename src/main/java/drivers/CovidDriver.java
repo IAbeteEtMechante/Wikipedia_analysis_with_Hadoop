@@ -1,5 +1,7 @@
 package drivers;
 
+import java.io.IOException;
+import java.util.Arrays;
 import mappers.CovidMap;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
@@ -12,12 +14,10 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 import reducers.CovidReduce;
 
-import java.io.IOException;
-import java.util.Arrays;
-
 public class CovidDriver {
 
-    public static void main(String[] args) throws IOException, ClassNotFoundException, InterruptedException {
+    public static void main(String[] args)
+            throws IOException, ClassNotFoundException, InterruptedException {
         if (args.length != 2) {
             System.out.println(Arrays.toString(args));
             System.exit(-1);
