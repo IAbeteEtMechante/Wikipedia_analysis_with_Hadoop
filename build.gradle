@@ -1,0 +1,50 @@
+plugins {
+    id 'java'
+    id 'idea'
+    id 'checkstyle'
+}
+
+group 'space.harbour.java'
+version '1.0'
+
+sourceCompatibility = 15
+targetCompatibility = 15
+
+//create a single Jar with all dependencies
+task fatJar(type: Jar) {
+    manifest {
+        attributes 'Implementation-Title': 'Gradle Jar File Example',
+                'Implementation-Version': version,
+                'Main-Class': 'WordCount'
+    }
+    baseName = project.name + '-all'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'org.json', name: 'json', version: '20201115'
+    compile group: 'javax.json', name: 'javax.json-api', version: '1.1.4'
+    compile group: 'org.glassfish', name: 'javax.json', version: '1.0.4'
+    compile group: 'org.apache.hadoop', name: 'hadoop-client', version: '3.1.2'
+
+}
+
+checkstyle {
+    toolVersion '8.37'
+    ignoreFailures = false
+    maxWarnings = 0
+}
+
+checkstyleMain {
+    source ='src/main/java'
+}
+
+checkstyleTest {
+    source ='src/test/java'
+}
