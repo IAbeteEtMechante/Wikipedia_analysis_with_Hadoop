@@ -33,7 +33,7 @@ public class LatestArticlesViewed {
          * @param key is the title of an article from Wikipedia.
          * @param value is the sump of page views of an article.
          * @param context is the map containing articles recently
-         * viewed by the users.
+         *                viewed by the users.
          * @throws IOException if map cannot be written or closed.
          * @throws InterruptedException if interrupted while processing.
          */
