@@ -30,6 +30,7 @@ public class LatestArticlesViewed {
             extends Mapper<LongWritable, Text, Text, LongWritable> {
 
         /** Map Function of the program.
+         *
          * @param key
          * @param value
          * @param context
@@ -51,6 +52,7 @@ public class LatestArticlesViewed {
             Reducer<Text, LongWritable, Text, DoubleWritable> {
 
         /** Reduce Function of the program.
+         *
          * @param key
          * @param values
          * @param context
@@ -64,6 +66,7 @@ public class LatestArticlesViewed {
     }
 
     /** Setting up the job for latest articles viewed.
+     *
      * @param args
      * @throws IOException
      * @throws ClassNotFoundException

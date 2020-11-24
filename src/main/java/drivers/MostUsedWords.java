@@ -31,6 +31,7 @@ import utils.MiscUtils;
 public class MostUsedWords {
 
     /** Setting up the job for most used words.
+     *
      * @param args
      * @throws Exception
      */

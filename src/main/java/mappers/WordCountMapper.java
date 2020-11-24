@@ -31,6 +31,7 @@ public class WordCountMapper extends Mapper<Object, Text, Text, IntWritable> {
 
     /** Map Function
      * Maps every input to record one.
+     *
      * @param key
      * @param value
      * @param context
