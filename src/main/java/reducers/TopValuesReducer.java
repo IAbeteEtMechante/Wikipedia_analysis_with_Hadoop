@@ -1,13 +1,9 @@
-/**
- * MapReduce Program - file TopValuesReducer.java
- *
+/** MapReduce Program - file TopValuesReducer.java
  * Authors:
  * Duc Pham
  * Patricia Poral
  * Pierre Schwob
- *
  * copyright (c) 2020
- *
  */
 
 package reducers;
@@ -39,7 +35,6 @@ public class TopValuesReducer extends Reducer<Text, IntWritable, Text, IntWritab
      * Aggregation of results.
      * Outputs the sum of every word used
      * in Wikipedia article.
-     *
      * @param key
      * @param values
      * @param context
@@ -65,7 +60,6 @@ public class TopValuesReducer extends Reducer<Text, IntWritable, Text, IntWritab
 
     /** Writes the result of every
      * processed partition.
-     *
      * @param context
      * @throws IOException
      * @throws InterruptedException

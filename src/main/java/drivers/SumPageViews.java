@@ -1,6 +1,4 @@
-/**
- * MapReduce Program - file SumPageViews.java
- *
+/** MapReduce Program - file SumPageViews.java
  * Authors:
  * Duc Pham
  * Patricia Poral
@@ -34,7 +32,6 @@ public class SumPageViews {
 
         /** Map Function of the program.
          * Maps input to article title and views.
-         *
          * @param key
          * @param value
          * @param context
@@ -53,7 +50,6 @@ public class SumPageViews {
         }
 
         /** Read and setup the parameters.
-         *
          * @param context
          * @throws IOException
          * @throws InterruptedException
@@ -69,7 +65,6 @@ public class SumPageViews {
 
         /** Reduce Function of the program.
          * Aggregation of results.
-         *
          * @param key
          * @param values
          * @param context
@@ -99,7 +94,6 @@ public class SumPageViews {
     }
 
     /** Setting up the job for latest articles viewed.
-     *
      * @param args
      * @throws IOException
      * @throws ClassNotFoundException

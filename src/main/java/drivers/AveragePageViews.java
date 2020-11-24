@@ -1,13 +1,9 @@
-/**
- * MapReduce Program - file AveragePageViews.java
- *
+/** MapReduce Program - file AveragePageViews.java
  * Authors:
  * Duc Pham
  * Patricia Poral
  * Pierre Schwob
- *
  * copyright (c) 2020
- *
  */
 
 package drivers;
@@ -34,7 +30,6 @@ public class AveragePageViews {
 
         /** Map Function of the program.
          * Maps input to article title and views.
-         *
          * @param key
          * @param value
          * @param context
@@ -53,7 +48,6 @@ public class AveragePageViews {
         }
 
         /** Read and setup the parameters.
-         *
          * @param context
          * @throws IOException
          * @throws InterruptedException
@@ -70,7 +64,6 @@ public class AveragePageViews {
         /** Reduce Function of the program.
          * Overwriting the views with average views.
          * Aggregation of results.
-         *
          * @param key
          * @param values
          * @param context
@@ -92,7 +85,6 @@ public class AveragePageViews {
     }
 
     /** Setting up the job for average page views.
-     *
      * @param args
      * @throws IOException
      * @throws ClassNotFoundException

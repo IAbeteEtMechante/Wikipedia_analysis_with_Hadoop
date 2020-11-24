@@ -1,13 +1,9 @@
-/**
- * MapReduce Program - file MostUsedWords.java
- *
+/** MapReduce Program - file MostUsedWords.java
  * Authors:
  * Duc Pham
  * Patricia Poral
  * Pierre Schwob
- *
  * copyright (c) 2020
- *
  */
 
 package drivers;
@@ -35,7 +31,6 @@ import utils.MiscUtils;
 public class MostUsedWords {
 
     /** Setting up the job for most used words.
-     *
      * @param args
      * @throws Exception
      */

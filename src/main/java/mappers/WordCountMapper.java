@@ -1,13 +1,9 @@
-/**
- * MapReduce Program - file WordCountMapper.java
- *
+/** MapReduce Program - file WordCountMapper.java
  * Authors:
  * Duc Pham
  * Patricia Poral
  * Pierre Schwob
- *
  * copyright (c) 2020
- *
  */
 
 package mappers;
@@ -35,7 +31,6 @@ public class WordCountMapper extends Mapper<Object, Text, Text, IntWritable> {
 
     /** Map Function
      * Maps every input to record one.
-     *
      * @param key
      * @param value
      * @param context

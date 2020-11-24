@@ -1,13 +1,9 @@
-/**
- * MapReduce Program - file AveragePageViews.java
- *
+/** MapReduce Program - file MiscUtils.java
  * Authors:
  * Duc Pham
  * Patricia Poral
  * Pierre Schwob
- *
  * copyright (c) 2020
- *
  */
 
 package utils;
@@ -21,8 +17,7 @@ import java.util.Map;
 
 public class MiscUtils {
 
-    /**
-     * sorts the map by values. Taken from:
+    /** sorts the map by values. Taken from:
      * http://javarevisited.blogspot.it/2012/12/how-to-sort-hashmap-java-by-key-and-value.html
      */
 
@@ -33,7 +28,6 @@ public class MiscUtils {
         Collections.sort(entries, new Comparator<Map.Entry<K, V>>() {
 
             /** Comparing values of keys.
-             *
              * @param o1
              * @param o2
              * @return

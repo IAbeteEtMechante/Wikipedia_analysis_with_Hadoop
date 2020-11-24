@@ -1,13 +1,9 @@
-/**
- * MapReduce Program - file MostPopularArticles.java
- *
+/** MapReduce Program - file MostPopularArticles.java
  * Authors:
  * Duc Pham
  * Patricia Poral
  * Pierre Schwob
- *
  * copyright (c) 2020
- *
  */
 
 package drivers;
@@ -33,7 +29,6 @@ public class MostPopularArticles {
             extends Mapper<LongWritable, Text, Text, LongWritable> {
 
         /** Map Function of the program.
-         *
          * @param key
          * @param value
          * @param context
@@ -47,7 +42,6 @@ public class MostPopularArticles {
         }
 
         /** Read and setup the parameters.
-         *
          * @param context
          * @throws IOException
          * @throws InterruptedException
@@ -63,7 +57,6 @@ public class MostPopularArticles {
 
         /** Reduce Function of the program.
          * Aggregate articles with highest views.
-         *
          * @param key
          * @param values
          * @param context
@@ -77,7 +70,6 @@ public class MostPopularArticles {
     }
 
     /** Setting up the job for most popular articles.
-     *
      * @param args
      * @throws IOException
      * @throws ClassNotFoundException

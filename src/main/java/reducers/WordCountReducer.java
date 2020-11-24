@@ -1,13 +1,9 @@
-/**
- * MapReduce Program - file WordCountReducer.java
- *
+/** MapReduce Program - file WordCountReducer.java
  * Authors:
  * Duc Pham
  * Patricia Poral
  * Pierre Schwob
- *
  * copyright (c) 2020
- *
  */
 
 package reducers;
@@ -35,7 +31,6 @@ public class WordCountReducer extends Reducer<Text, IntWritable, Text, IntWritab
     /** Reduce Function
      * Aggregation of results.
      * Outputs the total count of a word in article.
-     *
      * @param key
      * @param values
      * @param context
