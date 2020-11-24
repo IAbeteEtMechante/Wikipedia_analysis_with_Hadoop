@@ -26,7 +26,7 @@ public class MostUsedWords {
     /** Setting up the job for most used words.
      *
      * @param args an array of command-line arguments for the application.
-     * @throws Exception
+     * @throws Exception if error occurs in the method.
      */
 
     public static void main(String[] args) throws Exception {

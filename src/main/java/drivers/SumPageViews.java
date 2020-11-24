@@ -88,7 +88,8 @@ public class SumPageViews {
         }
     }
 
-    /**
+    /** Main thread that calls another main thread.
+     *
      * @throws IOException if main cannot be closed.
      * @throws ClassNotFoundException if tries to load in a class through its string name.
      * @throws InterruptedException if interrupted while processing.

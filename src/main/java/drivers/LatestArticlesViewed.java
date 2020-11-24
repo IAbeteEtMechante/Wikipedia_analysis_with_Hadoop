@@ -30,9 +30,10 @@ public class LatestArticlesViewed {
 
         /** Map Function of the program.
          *
-         * @param key is title of an article from Wikipedia.
-         * @param value
-         * @param context
+         * @param key is the title of an article from Wikipedia.
+         * @param value is the sump of page views of an article.
+         * @param context is the map containing articles recently
+         * viewed by the users.
          * @throws IOException if map cannot be written or closed.
          * @throws InterruptedException if interrupted while processing.
          */
@@ -42,8 +43,10 @@ public class LatestArticlesViewed {
                 throws IOException, InterruptedException {
         }
 
-        /**
-         * @param context
+        /** Read and setup the parameters.
+         *
+         * @param context is the map containing the title of Wikipedia
+         *                articles and its corresponding page views.
          * @throws IOException if setup cannot be closed.
          * @throws InterruptedException if interrupted while processing.
          */
@@ -58,9 +61,10 @@ public class LatestArticlesViewed {
 
         /** Reduce Function of the program.
          *
-         * @param key
-         * @param values
-         * @param context
+         * @param key is the title of article from Wikipedia.
+         * @param values is the sump of page views of an article.
+         * @param context is the map containing articles recently
+         *                viewed by the users.
          * @throws IOException if reduce cannot be written or closed.
          * @throws InterruptedException if interrupted while processing.
          */

@@ -31,9 +31,10 @@ public class AveragePageViews {
         /** Map Function of the program.
          * Maps input to article title and views.
          *
-         * @param key
-         * @param value
-         * @param context
+         * @param key is title of article from Wikipedia.
+         * @param value is the page views of the aricle.
+         * @param context is the map containing the article title and its
+         *                corresponding page views.
          * @throws IOException if map cannot be written or closed.
          * @throws InterruptedException if interrupted while processing.
          */
@@ -50,9 +51,9 @@ public class AveragePageViews {
 
         /** Read and setup the parameters.
          *
-         * @param context
+         * @param context is the map containing the article title and its page views.
          * @throws IOException if setup cannot be closed.
-         * @throws InterruptedException
+         * @throws InterruptedException if interrupted while processing.
          */
 
         @Override
@@ -67,9 +68,10 @@ public class AveragePageViews {
          * Overwriting the views with average views.
          * Aggregation of results.
          *
-         * @param key
-         * @param values
-         * @param context
+         * @param key is title of article from Wikipedia.
+         * @param values is the computed average page view of an article.
+         * @param context is the map containing the title of articles from Wikipedia
+         *                and its corresponding average page views.
          * @throws IOException if reduce cannot be written or closed.
          * @throws InterruptedException if interrupted while processing.
          */
