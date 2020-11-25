@@ -16,7 +16,7 @@ import org.json.JSONObject;
 public class WikipediaCrawler {
 
     public static void main(String[] args) throws Exception {
-        prepUrl("articles", "2019120100", "2020112200");
+        prepUrl("data/covid_articles", "2019120100", "2020050300");
     }
 
     public static String sendGet(String url) throws Exception {
@@ -67,7 +67,7 @@ public class WikipediaCrawler {
                         + res.getString("timestamp").substring(0, 8)
                         + "," + res.getLong("views");
 
-                try (FileWriter fw = new FileWriter("wikicounts", true);
+                try (FileWriter fw = new FileWriter("covid_test_count", true);
                         BufferedWriter bw = new BufferedWriter(fw);
                         PrintWriter out = new PrintWriter(bw)) {
                     out.println(result);
