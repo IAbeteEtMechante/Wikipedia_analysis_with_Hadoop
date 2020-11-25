@@ -8,7 +8,7 @@ import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.data.category.DefaultCategoryDataset;
 
 public class LineChart {
-    public static void main( String[ ] args ) throws Exception {
+    public static void main(String[ ] args) throws Exception {
         DefaultCategoryDataset dataset = new DefaultCategoryDataset();
         dataset.addValue(26509, "views", "20191201");
         dataset.addValue(27276, "views", "20191202");
@@ -370,14 +370,14 @@ public class LineChart {
 
 
         JFreeChart lineChartObject = ChartFactory.createLineChart(
-                "Covid Related Article Views","Date (December 2019 - November 2020)",
+                "Covid Related Article Views", "Date (December 2019 - November 2020)",
                 "Total Views",
-                dataset,PlotOrientation.VERTICAL,
-                true,true,false);
+                dataset, PlotOrientation.VERTICAL,
+                true, true, false);
 
         int width = 640;    /* Width of the image */
         int height = 480;   /* Height of the image */
         File lineChart = new File( "LineChart.jpeg" );
-        ChartUtilities.saveChartAsJPEG(lineChart ,lineChartObject, width ,height);
+        ChartUtilities.saveChartAsJPEG(lineChart, lineChartObject, width, height);
     }
 }
