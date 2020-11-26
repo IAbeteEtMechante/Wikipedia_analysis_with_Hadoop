@@ -8,8 +8,8 @@
 
 package drivers;
 
-import mappers.WikiDumpMapper;
 import java.io.IOException;
+import mappers.WikiDumpMapper;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
