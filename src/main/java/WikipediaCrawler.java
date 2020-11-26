@@ -16,7 +16,7 @@ import org.json.JSONObject;
 public class WikipediaCrawler {
 
     public static void main(String[] args) throws Exception {
-        prepUrl("data/covid_articles", "2019120100", "2020050300");
+        prepUrl("data/top_25_articles", "2020111500", "2020112100");
     }
 
     public static String sendGet(String url) throws Exception {
