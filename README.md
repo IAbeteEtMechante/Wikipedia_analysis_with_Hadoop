@@ -213,6 +213,8 @@ Using MapReduce codes, we were able to obtain the total views of Covid related a
 
 ![Line Chart][linechart]
 
+![Line Chart][linechartsumpageviews]
+
 ### Discussion
 
 <!-- POSSIBLE EVOLUTIONS -->
