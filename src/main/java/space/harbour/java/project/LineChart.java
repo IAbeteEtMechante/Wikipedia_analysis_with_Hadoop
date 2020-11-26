@@ -370,7 +370,7 @@ public class LineChart {
 
 
         JFreeChart lineChartObject = ChartFactory.createLineChart(
-                "Covid Related Article Views", "Date (December 2019 - November 2020)",
+                "Covid Related Article Views per Day", "Date (December 2019 - November 2020)",
                 "Total Views",
                 dataset, PlotOrientation.VERTICAL,
                 true, true, false);

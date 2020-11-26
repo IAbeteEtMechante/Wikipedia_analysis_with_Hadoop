@@ -118,8 +118,8 @@ public class LineChartSumPageViews {
         dataset.addValue(2.85, "sumviews", "2016080100");
 
         JFreeChart lineChartObject = ChartFactory.createLineChart(
-                "Sum of Page Views", "Date (December 2007 - August 2016)",
-                "Sum of Page Views (in Billion)",
+                "Covid Related Article Views per Month", "Date (December 2007 - August 2016)",
+                "Total Views (in Billion)",
                 dataset, PlotOrientation.VERTICAL,
                 true, true, false);
 
