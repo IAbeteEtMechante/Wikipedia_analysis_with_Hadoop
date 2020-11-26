@@ -22,7 +22,8 @@ public class WikiDumpMapper extends Mapper<Object, Text, Text, IntWritable> {
     private static final IntWritable one = new IntWritable(1);
     private Text word = new Text();
 
-    /**
+    /** This will return a cleaned xml text.
+     *
      * @param xmlText is the text obtained from Wikipedia dump files.
      * @return cleaned xml text.
      */

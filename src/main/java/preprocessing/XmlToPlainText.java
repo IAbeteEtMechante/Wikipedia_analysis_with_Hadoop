@@ -12,12 +12,11 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-/** Java class that transforms an xml file into a plain text file
+/** Java class that transforms an xml file into a plain text file.
  * It takes two arguments:
  *  - a filename of an xml file
  *  - a filename of where to store the resulting plain text file
  */
-
 
 public class XmlToPlainText {
     public static String readFileAsString(String fileName) {

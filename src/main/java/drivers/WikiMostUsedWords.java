@@ -15,9 +15,8 @@ import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
-import org.apache.hadoop.util.GenericOptionsParser;
-
 import java.io.IOException;
+import org.apache.hadoop.util.GenericOptionsParser;
 
 /** MapReduce program for Most Used Words in Wikipedia articles.
  * This will output the total count of words from
@@ -25,15 +24,16 @@ import java.io.IOException;
  */
 
 public class WikiMostUsedWords {
-    public static void main(String[] args) throws Exception {
 
-        /** Setting up the job for most used words in Wikipedia.
-         *
-         * @param args an array of command-line arguments for the application.
-         * @throws IOException if main cannot be closed.
-         * @throws ClassNotFoundException if tries to load in a class through its string name.
-         * @throws InterruptedException if interrupted while processing.
-         */
+    /** Setting up the job for most used words in Wikipedia.
+     *
+     * @param args an array of command-line arguments for the application.
+     * @throws IOException if main cannot be closed.
+     * @throws ClassNotFoundException if tries to load in a class through its string name.
+     * @throws InterruptedException if interrupted while processing.
+     */
+
+    public static void main(String[] args) throws Exception {
 
         /* Create a configuration for the job
          */
