@@ -207,8 +207,13 @@ Here is how it looks like in Hadoop 1 Web User Interface, as you can see on this
 Not only do we want to check that our MapReduce jobs work properly, but because we are dealing with Big Data and we are trying to launch our project on a Network, it is important to also run some performance tests. It involves measuring the speed of our jobs, and also testing with bigger volumes of data.
 
 <!-- RESULTS -->
-## Results
+## Result and Discussion
+### Result
+Using MapReduce codes, we were able to obtain the sum of views of Covid related articles per day. Below is the line chart produced from LineChart.java
+
 ![Line Chart][linechart]
+
+### Discussion
 
 <!-- POSSIBLE EVOLUTIONS -->
 ## Possible Evolutions
