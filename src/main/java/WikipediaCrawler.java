@@ -1,5 +1,3 @@
-import org.json.JSONObject;
-
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileReader;
@@ -11,6 +9,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
+import org.json.JSONObject;
 
 public class WikipediaCrawler {
     public static void main(String[] args) throws Exception {
@@ -30,7 +29,8 @@ public class WikipediaCrawler {
         int responseCode = con.getResponseCode();
         //System.out.println("\nSending 'GET' request to URL : " + url);
 
-        try { BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
+        try {
+            BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
             String inputLine;
             StringBuffer response = new StringBuffer();
             while ((inputLine = in.readLine()) != null) {
@@ -56,8 +56,8 @@ public class WikipediaCrawler {
                         + res.getString("timestamp").substring(0, 8)
                         + "," + res.getLong("views");
                 try (FileWriter fw = new FileWriter("covid_test_count", true);
-                     BufferedWriter bw = new BufferedWriter(fw);
-                     PrintWriter out = new PrintWriter(bw)) {
+                        BufferedWriter bw = new BufferedWriter(fw);
+                        PrintWriter out = new PrintWriter(bw)) {
                     out.println(result);
                 } catch (IOException e) {
                     e.printStackTrace();
