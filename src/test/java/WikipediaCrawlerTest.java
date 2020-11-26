@@ -11,6 +11,6 @@ public class WikipediaCrawlerTest extends TestCase {
                 WikipediaCrawler.parseFromJsonResponse(WikipediaCrawler.prepUrl(
                         "data/articles_test",
                         "2015100100", "2015100100"));
-        assertEquals(result, "Isaac_Newton,20151001,11417");
+        assertEquals(result, "Isaac_Newton 20151001 11417");
     }
 }

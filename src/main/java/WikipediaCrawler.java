@@ -63,9 +63,9 @@ public class WikipediaCrawler {
             for (int i = 0; i < 357; i++) {
                 JSONObject res = myjson.getJSONArray("items").getJSONObject(i);
                 System.out.println(res.getString("article"));
-                result = res.getString("article") + ","
+                result = res.getString("article") + " "
                         + res.getString("timestamp").substring(0, 8)
-                        + "," + res.getLong("views");
+                        + " " + res.getLong("views");
 
                 try (FileWriter fw = new FileWriter("covid_test_count", true);
                         BufferedWriter bw = new BufferedWriter(fw);

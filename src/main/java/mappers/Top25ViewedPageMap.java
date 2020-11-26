@@ -6,15 +6,15 @@ import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 
-public class SumPageViewsMap extends Mapper<LongWritable, Text, Text, LongWritable> {
+public class Top25ViewedPageMap extends Mapper<LongWritable, Text, Text, LongWritable> {
 
     @Override
     public void map(LongWritable key, Text value, Context context)
             throws IOException, InterruptedException {
-        String delims = ",";
+        String delims = " ";
         String[] wikiData = StringUtils.split(value.toString(), delims);
-        Text date = new Text(wikiData[0]);
-        LongWritable views = new LongWritable(Long.parseLong(wikiData[1]));
-        context.write(date, views);
+        Text article = new Text(wikiData[0]);
+        LongWritable views = new LongWritable(Long.parseLong(wikiData[2]));
+        context.write(article, views);
     }
 }
