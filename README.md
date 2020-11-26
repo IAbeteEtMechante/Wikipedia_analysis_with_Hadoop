@@ -46,6 +46,7 @@ Authors:
 * [Usage](#usage)
 * [Design](#design)
 * [Testing](#testing)
+* [Results](#results)
 * [Possible Evolutions](#possible-evolutions)
 * [Documentation](#documentation)
 * [Workload Allocation](#workload-allocation)
@@ -205,6 +206,10 @@ Here is how it looks like in Hadoop 1 Web User Interface, as you can see on this
 ### Performance tests
 Not only do we want to check that our MapReduce jobs work properly, but because we are dealing with Big Data and we are trying to launch our project on a Network, it is important to also run some performance tests. It involves measuring the speed of our jobs, and also testing with bigger volumes of data.
 
+<!-- RESULTS -->
+## Results
+![Line Chart][linechart]
+
 <!-- POSSIBLE EVOLUTIONS -->
 ## Possible Evolutions
 ### Text analysis
@@ -306,4 +311,5 @@ Project Link: [https://github.com/IAbeteEtMechante/Wikipedia_analysis_with_Hadoo
 [UML]: images/UML_diagram.png
 [hadoop-input]: images/input.png
 [hadoop-output]: images/output.png
+[linechart]: images/LineChart.png
 
