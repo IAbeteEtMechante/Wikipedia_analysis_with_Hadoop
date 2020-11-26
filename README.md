@@ -316,5 +316,6 @@ Project Link: [https://github.com/IAbeteEtMechante/Wikipedia_analysis_with_Hadoo
 [UML]: images/UML_diagram.png
 [hadoop-input]: images/input.png
 [hadoop-output]: images/output.png
-[linechart]: images/LineChart.png
+[linechart]: images/LineChart.jpeg
+[linechartsumpageviews]: images/LineChartSumPages.jpeg
 
