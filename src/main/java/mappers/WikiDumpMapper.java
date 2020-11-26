@@ -12,6 +12,11 @@ public class WikiDumpMapper extends Mapper<Object, Text, Text, IntWritable> {
     private Text word = new Text();
 
     public static String cleanXmlTags(String xmlText) {
+
+        //remove single letter words
+        //except "a"
+        xmlText = xmlText.replaceAll("(\\s[b-zB-Z]\\s)|(\\s.$)", " ");
+
         // remove REDIRECT
         xmlText = xmlText.replaceAll("REDIRECT", " ");
 
@@ -44,7 +49,7 @@ public class WikiDumpMapper extends Mapper<Object, Text, Text, IntWritable> {
         // remove excessive whitespaces
         xmlText = xmlText.replaceAll("\\s+", " ").trim();
 
-        return xmlText;
+        return xmlText.toLowerCase();
     }
 
     public void map(Object key, Text value, Context context)
