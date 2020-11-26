@@ -61,7 +61,10 @@ public class TopValuesReducer extends Reducer<Text, IntWritable, Text, IntWritab
 
     @Override
     protected void cleanup(Context context) throws IOException, InterruptedException {
+        // sort data by values
         Map<Text, IntWritable> sortedMap = MiscUtils.sortByValues(countMap);
+
+        // returns the top 20 words commonly used
         int counter = 0;
         for (Text key : sortedMap.keySet()) {
             if (counter++ == 20) {

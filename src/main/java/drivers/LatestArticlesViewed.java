@@ -21,7 +21,7 @@ import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 /** MapReduce program for Latest Articles Viewed in Wikipedia.
- * This will output the recent articles viewed by users.
+ * This will output the recent articles viewed by users
  */
 
 public class LatestArticlesViewed {
@@ -97,8 +97,8 @@ public class LatestArticlesViewed {
 
         job.setJarByClass(MostPopularArticles.class);
 
-        /* Set name of Mapper and Reducer class to
-         * LatestArticlesViewed.class
+        /* Set name of Mapper and LatestArticlesViewedMap.class
+         * and Reducer class to LatestArticlesViewedReduce.class.
          */
 
         job.setMapperClass(LatestArticlesViewedMap.class);

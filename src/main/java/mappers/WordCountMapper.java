@@ -34,6 +34,8 @@ public class WordCountMapper extends Mapper<Object, Text, Text, IntWritable> {
 
     public void map(Object key, Text value, Context context)
             throws IOException, InterruptedException {
+
+        // gets the word and assigns its value to one
         String line = value.toString();
         StringTokenizer tokenizer = new StringTokenizer(line);
         while (tokenizer.hasMoreTokens()) {

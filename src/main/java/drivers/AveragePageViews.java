@@ -22,7 +22,8 @@ import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 /** MapReduce program for Average Page Views of Wikipedia articles.
- * This will output the average page views per articles.
+ * This will output the average page views of Wikipedia articles
+ * per month.
  */
 
 public class AveragePageViews {
@@ -112,8 +113,8 @@ public class AveragePageViews {
 
         job.setJarByClass(AveragePageViews.class);
 
-        /* Set name of Mapper and Reducer class to
-         * AveragePageViews.class
+        /* Set name of Mapper AveragePageViewsMap.class
+         * and Reducer class to AveragePageViewsReduce.class.
          */
 
         job.setMapperClass(AveragePageViewsMap.class);

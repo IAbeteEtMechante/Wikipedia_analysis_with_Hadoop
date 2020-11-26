@@ -3,9 +3,7 @@
  * Duc Pham
  * Patricia Poral
  * Pierre Schwob
- *
  * copyright (c) 2020
- *
  */
 
 package drivers;
@@ -24,7 +22,8 @@ import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 /** MapReduce program for Sum of Page Views of Wikipedia articles.
- * This will output the total page views per articles.
+ * This will output the total page view of Wikipedia articles
+ * per month.
  */
 
 public class SumPageViews {
@@ -123,8 +122,8 @@ public class SumPageViews {
 
         job.setJarByClass(SumPageViews.class);
 
-        /* Set name of Mapper and Reducer class to
-         * SumPageViews.class
+        /* Set name of Mapper to SumPageViewsMap.class
+         * and Reducer class to SumPageViewsReduce.class.
          */
 
         job.setMapperClass(SumPageViewsMap.class);

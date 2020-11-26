@@ -1,4 +1,4 @@
-/* MapReduce Program - file MostUsedWords.java
+/* MapReduce Program - file WikiMostUsedWords.java
  * Authors:
  * Duc Pham
  * Patricia Poral
@@ -17,43 +17,47 @@ import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.util.GenericOptionsParser;
 
+import java.io.IOException;
+
 /** MapReduce program for Most Used Words in Wikipedia articles.
- * This will output words that are most commonly used.
+ * This will output the total count of words from
+ * Wikipedia articles.
  */
 
-public class MostUsedWords {
-
-    /** Setting up the job for most used words.
-     *
-     * @param args an array of command-line arguments for the application.
-     * @throws Exception if error occurs in the method.
-     */
-
+public class WikiMostUsedWords {
     public static void main(String[] args) throws Exception {
-        Configuration conf = new Configuration();
+
+        /** Setting up the job for most used words in Wikipedia.
+         *
+         * @param args an array of command-line arguments for the application.
+         * @throws IOException if main cannot be closed.
+         * @throws ClassNotFoundException if tries to load in a class through its string name.
+         * @throws InterruptedException if interrupted while processing.
+         */
 
         /* Create a configuration for the job
          */
 
+        Configuration conf = new Configuration();
         String[] otherArgs = new GenericOptionsParser(conf, args).getRemainingArgs();
         if (otherArgs.length != 2) {
-            System.err.println("Usage: EnhancedTopN <in> <out>");
+            System.err.println("Usage: WikiMostUsedWords <in> <out>");
             System.exit(2);
         }
         Job job = Job.getInstance(conf);
-        job.setJobName("Top N Enhanced");
+        job.setJobName("wikimostused");
 
         /* Set relevant jar were class specified as it's
          * parameter is present as part of that jar.
          */
 
-        job.setJarByClass(MostUsedWords.class);
+        job.setJarByClass(WikiMostUsedWords.class);
 
-        /* Set name of Mapper mappers.WordCountMapper.class
-         * and Reducer class to reducers.TopValuesReducer.class.
+        /* Set name of Mapper and Reducer class to
+         * AveragePageViews.class
          */
 
-        job.setMapperClass(mappers.WordCountMapper.class);
+        job.setMapperClass(mappers.WikiDumpMapper.class);
         job.setReducerClass(reducers.TopValuesReducer.class);
 
         /* Specify the data type of of output key and value

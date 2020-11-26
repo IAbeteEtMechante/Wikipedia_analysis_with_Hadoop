@@ -97,8 +97,8 @@ public class MostPopularArticles {
 
         job.setJarByClass(MostPopularArticles.class);
 
-        /* Set name of Mapper and Reducer class to
-         * MostPopularArticles.class
+        /* Set name of Mapper to MostPopularArticlesMap.class
+         * and Reducer Class to MostPopularArticlesReduce.class.
          */
 
         job.setMapperClass(MostPopularArticlesMap.class);
