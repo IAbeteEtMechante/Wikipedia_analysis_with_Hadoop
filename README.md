@@ -209,7 +209,7 @@ Not only do we want to check that our MapReduce jobs work properly, but because 
 <!-- RESULTS AND DISCUSSION-->
 ## Results and Discussion
 ### Results
-Using MapReduce codes, we were able to obtain the sum of views of Covid related articles per day which can be viewed inside /data folder. Below is the line chart produced from LineChart.java.
+Using MapReduce codes, we were able to obtain the total views of Covid related articles per day which can be viewed inside /data folder. Below is the line chart produced from LineChart.java.
 
 ![Line Chart][linechart]
 
