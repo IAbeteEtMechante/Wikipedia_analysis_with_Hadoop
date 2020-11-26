@@ -16,7 +16,7 @@ public class XmlToPlainText {
     public static String readFileAsString(String fileName) {
         String text = "";
         try {
-            text = new String(Files.readAllBytes(Paths.get("file.txt")));
+            text = new String(Files.readAllBytes(Paths.get(fileName)));
         } catch (IOException e) {
             e.printStackTrace();
         }
