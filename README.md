@@ -47,6 +47,9 @@ Authors:
 * [Design](#design)
 * [Testing](#testing)
 * [Results and Analysis](#results-and-analysis)
+  * [Covid Related Wikipedia Articles](#covid-related-wikipedia-articles)
+  * [Sum of Views of Wikipedia Articles](#sum-of-views-of-wikipedia-articles)
+  * [Top 25 Most Viewed Articles in Wikipedia](#top-25-most-viewed-articles-in-wikipedia)
 * [Possible Evolutions](#possible-evolutions)
 * [Documentation](#documentation)
 * [Workload Allocation](#workload-allocation)
@@ -218,11 +221,13 @@ Below are the graphs constructed and analysis inferred from the results of MapRe
 
 ![Line Chart][linechart]
 
-#### Wikipedia Articles
+
+
+#### Sum of Views of Wikipedia Articles
 
 ![Line Chart][linechartsumpageviews]
 
-#### Top 25 Most Viewed Articles
+#### Top 25 Most Viewed Articles in Wikipedia
 
 ![Bar Chart][barchart]
 
