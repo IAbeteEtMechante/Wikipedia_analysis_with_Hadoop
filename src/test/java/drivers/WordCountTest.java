@@ -3,6 +3,7 @@ package drivers;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import mappers.WordCountMapper;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
@@ -11,13 +12,8 @@ import org.apache.hadoop.mrunit.mapreduce.MapReduceDriver;
 import org.apache.hadoop.mrunit.mapreduce.ReduceDriver;
 import org.junit.Before;
 import org.junit.Test;
+import reducers.WordCountReducer;
 
-//http://hadooptutorial.info/mrunit-example-for-wordcount-algorithm/
-//https://sharebigdata.wordpress.com/2015/12/25/mr-unit-testing/
-//http://appsintheopen.com/posts/40-unit-testing-map-reduce-programs-with-mrunit
-
-//add MRv1 lib jars, add MRv2 lib jars, add MRv2 major common, hdfs, mapreduce, yarn jars
-//add run with mrunit-1.0.0-hadoop2.jar and MRv2 jars
 
 public class WordCountTest {
     MapReduceDriver<Object, Text, Text, IntWritable, Text, IntWritable> mapReduceDriver;
@@ -26,8 +22,8 @@ public class WordCountTest {
 
     @Before
     public void setUp() {
-        drivers.WordCountMapper mapper = new drivers.WordCountMapper();
-        drivers.WordCountReducer reducer = new drivers.WordCountReducer();
+        WordCountMapper mapper = new WordCountMapper();
+        WordCountReducer reducer = new WordCountReducer();
         mapDriver = MapDriver.newMapDriver(mapper);
         reduceDriver = ReduceDriver.newReduceDriver(reducer);
         mapReduceDriver = MapReduceDriver.newMapReduceDriver(mapper, reducer);
