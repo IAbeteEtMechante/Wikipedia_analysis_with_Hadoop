@@ -210,11 +210,19 @@ Not only do we want to check that our MapReduce jobs work properly, but because 
 ## Results and Analysis
 
 ### Results
-Wikipedia is a multilingual open-collaborative online encyclopedia, and as of 27 November 2020, there are 6,197,347 articles in the English Wikipedia. Given that Wikipedia data sets are too large and complex to deal with, it is vital to have a structured data to provide accurate analysis. 
+Wikipedia is a multilingual open-collaborative online encyclopedia, and as of 27 November 2020, there are 6,197,347 articles in the English Wikipedia. Given that Wikipedia data sets are too large and complex to deal with, it is vital to have a structured data to provide accurate analysis. Using different MapReduce algorithm implemented in Java, we were able to derive structured data and make inferences.
+
+Below are the graphs constructed and analysis inferred from the results of MapReduce programs.
+
+#### Covid Related Wikipedia Articles
 
 ![Line Chart][linechart]
 
+#### Wikipedia Articles
+
 ![Line Chart][linechartsumpageviews]
+
+#### Top 25 Most Viewed Articles
 
 ![Bar Chart][barchart]
 
