@@ -2,11 +2,10 @@ package space.harbour.java.project;
 
 import java.io.File;
 import org.jfree.chart.ChartFactory;
+import org.jfree.chart.ChartUtilities;
 import org.jfree.chart.JFreeChart;
 import org.jfree.chart.plot.PlotOrientation;
-import org.jfree.chart.ChartUtilities;
 import org.jfree.data.category.DefaultCategoryDataset;
-
 
 public class BarChartTop25Articles {
     public static void main(String[ ] args)throws Exception {
@@ -46,7 +45,7 @@ public class BarChartTop25Articles {
                 true, true, false);
         int width = 640;    /* Width of the image */
         int height = 480;   /* Height of the image */
-        File BarChart = new File("BarChartTop25Articles.png");
-        ChartUtilities.saveChartAsPNG(BarChart, barChart, width, height);
+        File barChartObject = new File("BarChartTop25Articles.png");
+        ChartUtilities.saveChartAsPNG(barChartObject, barChart, width, height);
     }
 }
