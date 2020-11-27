@@ -229,8 +229,6 @@ Comparing the results above and the data obtained from Google Trend (below), the
 
 #### Top 25 Most Viewed Articles in Wikipedia
 
-![Bar Chart][barchartraw]
-
 Here is the comparison of Top 25 Articles in Wikipedia for the week of 15-21 November 2020 derived from MapReduce codes and Wikipedia Top 25 Report.
 
 ![Bar Chart][barchart]
