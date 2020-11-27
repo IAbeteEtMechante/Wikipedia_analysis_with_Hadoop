@@ -27,6 +27,7 @@ public class WikiLengthsMapper extends Mapper<LongWritable, Text, LongWritable, 
      */
 
     private static final transient Logger logger = Logger.getLogger("Map");
+
     public static enum MapCounters {
         NUMPAGES, MAPID
     }
