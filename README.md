@@ -237,6 +237,18 @@ Here is the comparison of Top 25 Articles in Wikipedia for the week of 15-21 Nov
 
 As seen above, results obtained from MapReduce program and Wikipedia Top 25 Report does not differ except for the article regarding Margaret Thatcher. The reason for this is that the API was not able to obtain the data for article "Margaret Thatcher." We can say that our MapReduce program is well developed based on the results.
 
+#### Word Count of Wikipedia Articles
+
+Most commonly used word in Wikipedia articles is the article word "the."
+
+![Bar Chart][wordcount]
+
+This is the official ranking of commonly used word in English.
+
+![Bar Chart][wordcount-wiki]
+
+Result of MapReduce program is consistent with "the" being the word commonly used. Other words have different rank and some are not even reflected. It should be taken to account that only a portion of Wikipedia articles are processed.
+
 #### Sum of Views of Wikipedia Articles
 
 Sum of Page Views per month of 50,000 articles in Wikipedia are agreggated by using MapReduce. This reflect the users of Wikipedia and it is very evident that there is an increasing trend in Wikipedia users.
@@ -349,4 +361,6 @@ Project Link: [https://github.com/IAbeteEtMechante/Wikipedia_analysis_with_Hadoo
 [barchart]: images/BarChartTop25Articles.png
 [barchartraw]: images/BarChartMapReduce.jpg
 [covidtrend]: images/CovidTrend.jpg
+[wordcount]: images/BarChartWordCount.png
+[wordcount-wiki]: images/WordCount.png
 
