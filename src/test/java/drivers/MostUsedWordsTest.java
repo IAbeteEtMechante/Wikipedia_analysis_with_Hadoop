@@ -15,8 +15,7 @@ import org.junit.Before;
 import org.junit.Test;
 import reducers.TopValuesReducer;
 
-public class MostUsedWordsTest
-{
+public class MostUsedWordsTest {
     MapReduceDriver<Object, Text, Text, IntWritable, Text, IntWritable> mapReduceDriver;
     MapDriver<Object, Text, Text, IntWritable> mapDriver;
     ReduceDriver<Text, IntWritable, Text, IntWritable> reduceDriver;
