@@ -1,37 +1,40 @@
-package wordcount;
-
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import mappers.Top25ViewedPageMap;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapred.Mapper;
+import org.apache.hadoop.mapred.Reducer;
 import org.apache.hadoop.mrunit.MapDriver;
 import org.apache.hadoop.mrunit.MapReduceDriver;
 import org.apache.hadoop.mrunit.ReduceDriver;
 import org.junit.Before;
 import org.junit.Test;
+import reducers.CovidReduce;
 
-public class TestWordCount {
+public class Top25ViewedPageTest {
     MapReduceDriver<LongWritable, Text, Text, IntWritable, Text, IntWritable> mapReduceDriver;
     MapDriver<LongWritable, Text, Text, IntWritable> mapDriver;
     ReduceDriver<Text, IntWritable, Text, IntWritable> reduceDriver;
 
     @Before
     public void setUp() {
-        WordMapper mapper = new WordMapper();
-        SumReducer reducer = new SumReducer();
+        Top25ViewedPageMap mapper = new Top25ViewedPageMap();
+        CovidReduce reducer = new CovidReduce();
         mapDriver = new MapDriver<LongWritable, Text, Text, IntWritable>();
-        mapDriver.setMapper(mapper);
+        mapDriver.setMapper((Mapper<LongWritable, Text, Text, IntWritable>) mapper);
         reduceDriver = new ReduceDriver<Text, IntWritable, Text, IntWritable>();
-        reduceDriver.setReducer(reducer);
+        reduceDriver.setReducer((Reducer<Text, IntWritable, Text, IntWritable>) reducer);
         mapReduceDriver = new MapReduceDriver<LongWritable, Text, Text, IntWritable, Text, IntWritable>();
-        mapReduceDriver.setMapper(mapper);
-        mapReduceDriver.setReducer(reducer);
+        mapReduceDriver.setMapper((Mapper<LongWritable, Text, Text, IntWritable>) mapper);
+        mapReduceDriver.setReducer((Reducer<Text, IntWritable, Text, IntWritable>) reducer);
     }
 
     @Test
-    public void testMapper() {
+    public void testMapper() throws IOException {
         mapDriver.withInput(new LongWritable(1), new Text("cat cat dog"));
         mapDriver.withOutput(new Text("cat"), new IntWritable(1));
         mapDriver.withOutput(new Text("cat"), new IntWritable(1));
@@ -40,7 +43,7 @@ public class TestWordCount {
     }
 
     @Test
-    public void testReducer() {
+    public void testReducer() throws IOException {
         List<IntWritable> values = new ArrayList<IntWritable>();
         values.add(new IntWritable(1));
         values.add(new IntWritable(1));
@@ -50,7 +53,7 @@ public class TestWordCount {
     }
 
     @Test
-    public void testMapReduce() {
+    public void testMapReduce() throws IOException {
         mapReduceDriver.withInput(new LongWritable(1), new Text("cat cat dog"));
         mapReduceDriver.addOutput(new Text("cat"), new IntWritable(2));
         mapReduceDriver.addOutput(new Text("dog"), new IntWritable(1));

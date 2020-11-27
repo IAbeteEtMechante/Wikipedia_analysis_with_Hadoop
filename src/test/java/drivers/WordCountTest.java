@@ -15,7 +15,7 @@ import org.junit.Test;
 import reducers.WordCountReducer;
 
 
-public class WordCountTest {
+public class git WordCountTest {
     MapReduceDriver<Object, Text, Text, IntWritable, Text, IntWritable> mapReduceDriver;
     MapDriver<Object, Text, Text, IntWritable> mapDriver;
     ReduceDriver<Text, IntWritable, Text, IntWritable> reduceDriver;
