@@ -1,7 +1,5 @@
 package graphs;
 
-package space.harbour.java.project;
-
 import java.io.File;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartUtilities;
