@@ -10,13 +10,13 @@ import org.jfree.data.category.DefaultCategoryDataset;
 public class BarChartTop25Articles {
     public static void main(String[ ] args)throws Exception {
         final String mapReduce = "Top 25 Articles from MapReduce";
-        final String fromWiki = "Articles from Wikipedia Top 25"
+        final String fromWiki = "Articles from Wikipedia Top 25";
 
         final DefaultCategoryDataset dataset = new DefaultCategoryDataset();
         //from MapReduce
         dataset.addValue(10184695, mapReduce, "Donald Trump");
         dataset.addValue(2850537, mapReduce, "Diana, Princess of Wales");
-        dataset.addValue(2350101, mapReduce, "Megan Is Missing");
+        dataset.addValue(2350101, mapReduce, "Megan is Missing");
         dataset.addValue(2250954, mapReduce, "Elizabeth II");
         dataset.addValue(2177170, mapReduce, "Louis Mountbatten, 1st Earl Mountbatten of Burma");
         dataset.addValue(2023240, mapReduce, "Princess Margaret, Countess of Snowdon");
@@ -47,13 +47,13 @@ public class BarChartTop25Articles {
         dataset.addValue(2169279, fromWiki, "Louis Mountbatten, 1st Earl Mountbatten of Burma");
         dataset.addValue(2018293, fromWiki, "Princess Margaret, Countess of Snowdon");
         dataset.addValue(1747672, fromWiki, "Charles, Prince of Wales");
-        dataset.addValue(1526501, fromWiki, "The Queen's Gambit(miniseries)");
+        dataset.addValue(1526501, fromWiki, "The Queen's Gambit (miniseries)");
         dataset.addValue(1381775, fromWiki, "Anne, Princess Royal");
         dataset.addValue(1214063, fromWiki, "Prince Philip, Duke of Edinburgh");
         dataset.addValue(1187306, fromWiki, "2020 United States presidential election");
-        dataset.addValue(1160739, fromWiki, "The Crown(TV series)");
+        dataset.addValue(1160739, fromWiki, "The Crown (TV series)");
         dataset.addValue(1142299, fromWiki, "Michael Fagan (intruder)");
-        dataset.addValue(1120918, fromWiki, "The Crown(season 4)");
+        dataset.addValue(1120918, fromWiki, "The Crown (season 4)");
         dataset.addValue(1099346, fromWiki, "Camilla, Duchess of Cornwall");
         dataset.addValue(1060768, fromWiki, "Prince Edward, Earl of Wessex");
         dataset.addValue(1059742, fromWiki, "Mark Thatcher");

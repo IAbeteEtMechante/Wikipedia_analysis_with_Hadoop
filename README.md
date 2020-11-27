@@ -215,11 +215,16 @@ Not only do we want to check that our MapReduce jobs work properly, but because 
 ### Results
 Wikipedia is a multilingual open-collaborative online encyclopedia, and as of 27 November 2020, there are 6,197,347 articles in the English Wikipedia. Given that Wikipedia data sets are too large and complex to deal with, it is vital to have a structured data to provide accurate analysis. Using different MapReduce algorithm implemented in Java, we were able to derive structured data and make inferences.
 
-Below are the graphs constructed and analysis inferred from the results of MapReduce programs.
+Below are the constructed graphs and analysis inferred from the results of MapReduce programs that can be accessed in /src/main folder.
 
 #### Covid Related Wikipedia Articles
 
+From the list of articles in Wikipedia dump files, WikipediaCrawler.java was used to acquire articles that are relevant to Covid. Presented is the graph for Total Views of Covid Related Articles per day.
+
 ![Line Chart][linechart]
+
+
+![Line Chart][covidtrend]
 
 
 
@@ -229,7 +234,16 @@ Below are the graphs constructed and analysis inferred from the results of MapRe
 
 #### Top 25 Most Viewed Articles in Wikipedia
 
+
+
+![Bar Chart][barchartraw]
+
+Here is the comparison of Top 25 Articles in Wikipedia for the week of 15-21 November 2020 derived from MapReduce codes and Wikipedia Top 25 Report.
+
 ![Bar Chart][barchart]
+
+As seen above, results obtained from MapReduce program and Wikipedia Top 25 Report does not differ except for the article regarding Margaret Thatcher. The reason for this is that the API was not able to obtain the data for article "Margaret Thatcher." We can say that our MapReduce program is well developed based on the results.
+
 
 <!-- POSSIBLE EVOLUTIONS -->
 ## Possible Evolutions
@@ -335,4 +349,6 @@ Project Link: [https://github.com/IAbeteEtMechante/Wikipedia_analysis_with_Hadoo
 [linechart]: images/LineChart.jpeg
 [linechartsumpageviews]: images/LineChartSumPageViews.jpeg
 [barchart]: images/BarChartTop25Articles.png
+[barchartraw]: images/BarChartMapReduce.jpg
+[covidtrend]: images/CovidTrend.jpg
 
