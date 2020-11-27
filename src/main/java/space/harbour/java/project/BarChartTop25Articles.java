@@ -4,15 +4,15 @@ import java.io.File;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.JFreeChart;
 import org.jfree.chart.plot.PlotOrientation;
-import org.jfree.data.category.DefaultCategoryDataset;
 import org.jfree.chart.ChartUtilities;
+import org.jfree.data.category.DefaultCategoryDataset;
+
 
 public class BarChartTop25Articles {
-
-    public static void main( String[ ] args )throws Exception {
+    public static void main(String[ ] args)throws Exception {
         final String views = "Total Views";
 
-        final DefaultCategoryDataset dataset = new DefaultCategoryDataset( );
+        final DefaultCategoryDataset dataset = new DefaultCategoryDataset();
         dataset.addValue(10184695, views, "Donald Trump");
         dataset.addValue(2850537, views, "Diana, Princess of Wales");
         dataset.addValue(2350101, views, "Megan Is Missing");
@@ -41,13 +41,12 @@ public class BarChartTop25Articles {
 
         JFreeChart barChart = ChartFactory.createBarChart(
                 "Top 25 Articles Viewed in Wikipedia",
-                "Articles", "Total Views",
-                dataset,PlotOrientation.HORIZONTAL,
+                "Articles", "Total Views (15-21 November 2020)",
+                dataset, PlotOrientation.HORIZONTAL,
                 true, true, false);
-
-        int width = 700;    /* Width of the image */
+        int width = 640;    /* Width of the image */
         int height = 480;   /* Height of the image */
-        File BarChart = new File( "BarChartTop25Articles.png" );
-        ChartUtilities.saveChartAsPNG(BarChart , barChart , width , height);
+        File BarChart = new File("BarChartTop25Articles.png");
+        ChartUtilities.saveChartAsPNG(BarChart, barChart, width, height);
     }
 }
