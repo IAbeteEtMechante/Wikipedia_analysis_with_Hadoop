@@ -195,7 +195,11 @@ For example, the simple implementation of WordCount explained in the Usage secti
 
 ![Input][hadoop-input]
 
-And gives this output, which is simply the count of number of occurences of each word in the input:
+The output of mapping phase will be each of the words above with frequency equals 1:
+
+<img src= "https://i.ibb.co/3BTGGL4/Screenshot-from-2020-11-27-12-59-19.png">
+
+And the reducer gives this final output, which is simply the count of number of occurences of each word in the input:
 
 ![Output][hadoop-output]
 
