@@ -28,8 +28,8 @@
 This is our project in Java for the course M3-Java at Harbour Space. We are currently studying Data Science, so we thought it would be interesting to apply what we have learned in Java to crunch some Big Data using MapReduce.
 
 Authors: 
-<li>Patricia Poral</li>
 <li>Duc Pham</li>
+<li>Patricia Poral</li>
 <li>Pierre Schwob</li>
 <br>
 
@@ -47,6 +47,9 @@ Authors:
 * [Design](#design)
 * [Testing](#testing)
 * [Results and Analysis](#results-and-analysis)
+  * [Covid Related Wikipedia Articles](#covid-related-wikipedia-articles)
+  * [Top 25 Most Viewed Articles in Wikipedia](#top-25-most-viewed-articles-in-wikipedia)
+  * [Sum of Views of Wikipedia Articles](#sum-of-views-of-wikipedia-articles)
 * [Possible Evolutions](#possible-evolutions)
 * [Documentation](#documentation)
 * [Workload Allocation](#workload-allocation)
@@ -195,11 +198,7 @@ For example, the simple implementation of WordCount explained in the Usage secti
 
 ![Input][hadoop-input]
 
-The output of mapping phase will be each of the words above with frequency equals 1:
-
-<img src= "https://i.ibb.co/3BTGGL4/Screenshot-from-2020-11-27-12-59-19.png">
-
-And the reducer gives this final output, which is simply the count of number of occurences of each word in the input:
+And gives this output, which is simply the count of number of occurences of each word in the input:
 
 ![Output][hadoop-output]
 
@@ -212,14 +211,33 @@ Not only do we want to check that our MapReduce jobs work properly, but because 
 
 <!-- RESULTS AND ANALYSIS-->
 ## Results and Analysis
-### Covid Related Articles
-Using MapReduce codes, we were able to obtain the total views of Covid related articles per day which can be viewed inside /data folder. Below is the line chart produced from LineChart.java.
 
+### Results
+Wikipedia is a multilingual open-collaborative online encyclopedia, and as of 27 November 2020, there are 6,197,347 articles in the English Wikipedia. Given that Wikipedia data sets are too large and complex to deal with, it is vital to have a structured data to provide accurate analysis. Using different MapReduce algorithm implemented in Java, we were able to derive structured data and make inferences.
 
+Below are the constructed graphs and analysis inferred from the results of MapReduce programs that can be accessed in /src/main folder.
+
+#### Covid Related Wikipedia Articles
+
+From the list of articles in Wikipedia dump files, WikipediaCrawler.java was used to acquire articles that are relevant to Covid. Presented is the graph for Total Views of Covid Related Articles per day.
 
 ![Line Chart][linechart]
 
-### Wikipedia Articles
+Comparing the results above and the data obtained from Google Trend (below), the peak for "Covid" searches in March 2020 is similar to the result of our MapReduce program. The only relevant difference in the peak in May 2020. Possible reasons of this peak in our MapReduce result is the news regarding the highest death toll for Covid in the US ever since covid begun. This may have prompt users to search and read more articles regarding Covid.
+
+![Line Chart][covidtrend]
+
+#### Top 25 Most Viewed Articles in Wikipedia
+
+![Bar Chart][barchartraw]
+
+Here is the comparison of Top 25 Articles in Wikipedia for the week of 15-21 November 2020 derived from MapReduce codes and Wikipedia Top 25 Report.
+
+![Bar Chart][barchart]
+
+As seen above, results obtained from MapReduce program and Wikipedia Top 25 Report does not differ except for the article regarding Margaret Thatcher. The reason for this is that the API was not able to obtain the data for article "Margaret Thatcher." We can say that our MapReduce program is well developed based on the results.
+
+#### Sum of Views of Wikipedia Articles
 
 ![Line Chart][linechartsumpageviews]
 
@@ -326,4 +344,7 @@ Project Link: [https://github.com/IAbeteEtMechante/Wikipedia_analysis_with_Hadoo
 [hadoop-output]: images/output.png
 [linechart]: images/LineChart.jpeg
 [linechartsumpageviews]: images/LineChartSumPageViews.jpeg
+[barchart]: images/BarChartTop25Articles.png
+[barchartraw]: images/BarChartMapReduce.jpg
+[covidtrend]: images/CovidTrend.jpg
 
