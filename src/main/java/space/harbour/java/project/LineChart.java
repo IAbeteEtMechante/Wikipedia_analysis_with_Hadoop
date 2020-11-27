@@ -377,7 +377,7 @@ public class LineChart {
 
         int width = 640;    /* Width of the image */
         int height = 480;   /* Height of the image */
-        File lineChart = new File("LineChart.jpeg");
+        File lineChart = new File("LineChart.png");
         ChartUtilities.saveChartAsPNG(lineChart, lineChartObject, width, height);
     }
 }

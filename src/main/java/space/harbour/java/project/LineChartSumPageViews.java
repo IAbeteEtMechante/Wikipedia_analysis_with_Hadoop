@@ -123,7 +123,7 @@ public class LineChartSumPageViews {
 
         int width = 640;    /* Width of the image */
         int height = 480;   /* Height of the image */
-        File lineChartSumPageViews = new File("LineChartSumPageViews.jpeg");
+        File lineChartSumPageViews = new File("LineChartSumPageViews.png");
         ChartUtilities.saveChartAsPNG(lineChartSumPageViews, lineChartObject, width, height);
     }
 }
