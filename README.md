@@ -223,10 +223,9 @@ From the list of articles in Wikipedia dump files, WikipediaCrawler.java was use
 
 ![Line Chart][linechart]
 
+Comparing the results above and the data obtained from Google Trend (below), the peak for "Covid" searches in March 2020 is similar to the result of our MapReduce program. The only relevant difference in the peak in May 2020. Possible reasons of this peak in our MapReduce result is the news regarding the highest death toll for Covid in the US ever since covid begun.
 
 ![Line Chart][covidtrend]
-
-
 
 #### Sum of Views of Wikipedia Articles
 
