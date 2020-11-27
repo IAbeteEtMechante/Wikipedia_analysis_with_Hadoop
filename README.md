@@ -48,8 +48,8 @@ Authors:
 * [Testing](#testing)
 * [Results and Analysis](#results-and-analysis)
   * [Covid Related Wikipedia Articles](#covid-related-wikipedia-articles)
-  * [Sum of Views of Wikipedia Articles](#sum-of-views-of-wikipedia-articles)
   * [Top 25 Most Viewed Articles in Wikipedia](#top-25-most-viewed-articles-in-wikipedia)
+  * [Sum of Views of Wikipedia Articles](#sum-of-views-of-wikipedia-articles)
 * [Possible Evolutions](#possible-evolutions)
 * [Documentation](#documentation)
 * [Workload Allocation](#workload-allocation)
@@ -227,13 +227,7 @@ Comparing the results above and the data obtained from Google Trend (below), the
 
 ![Line Chart][covidtrend]
 
-#### Sum of Views of Wikipedia Articles
-
-![Line Chart][linechartsumpageviews]
-
 #### Top 25 Most Viewed Articles in Wikipedia
-
-
 
 ![Bar Chart][barchartraw]
 
@@ -243,6 +237,9 @@ Here is the comparison of Top 25 Articles in Wikipedia for the week of 15-21 Nov
 
 As seen above, results obtained from MapReduce program and Wikipedia Top 25 Report does not differ except for the article regarding Margaret Thatcher. The reason for this is that the API was not able to obtain the data for article "Margaret Thatcher." We can say that our MapReduce program is well developed based on the results.
 
+#### Sum of Views of Wikipedia Articles
+
+![Line Chart][linechartsumpageviews]
 
 <!-- POSSIBLE EVOLUTIONS -->
 ## Possible Evolutions
