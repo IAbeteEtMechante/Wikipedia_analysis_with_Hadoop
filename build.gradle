@@ -33,12 +33,18 @@ dependencies {
     }
     testCompile "org.powermock:powermock-module-junit4:1.6.2"
     testCompile "org.powermock:powermock-api-mockito:1.6.2"
+    compile group: 'org.jfree', name: 'jfreechart', version: '1.5.1'
+    compile group: 'jfree', name: 'jfreechart', version: '1.0.13'
     compile group: 'org.json', name: 'json', version: '20201115'
     compile group: 'javax.json', name: 'javax.json-api', version: '1.1.4'
     compile group: 'org.glassfish', name: 'javax.json', version: '1.0.4'
-    compile group: 'org.jfree', name: 'jfreechart', version: '1.5.1'
-    compile group: 'jfree', name: 'jfreechart', version: '1.0.13'
     compile group: 'org.apache.hadoop', name: 'hadoop-client', version: '3.1.2'
+    testCompile("org.apache.mrunit:mrunit:1.1.0:hadoop2") {
+        exclude(group: "org.mockito")
+    }
+    testCompile "org.powermock:powermock-module-junit4:1.6.2"
+    testCompile "org.powermock:powermock-api-mockito:1.6.2"
+
 }
 
 checkstyle {
