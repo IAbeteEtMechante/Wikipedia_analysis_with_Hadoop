@@ -198,7 +198,11 @@ For example, the simple implementation of WordCount explained in the Usage secti
 
 ![Input][hadoop-input]
 
-And gives this output, which is simply the count of number of occurences of each word in the input:
+Mapper will break down the string into individual words with frequency = 1:
+
+<img src="https://i.ibb.co/3BTGGL4/Screenshot-from-2020-11-27-12-59-19.png">
+
+And then reducer gives this output, which is simply the count of number of occurences of each word in the input:
 
 ![Output][hadoop-output]
 
