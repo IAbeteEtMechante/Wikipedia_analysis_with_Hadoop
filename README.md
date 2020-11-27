@@ -239,6 +239,8 @@ As seen above, results obtained from MapReduce program and Wikipedia Top 25 Repo
 
 #### Sum of Views of Wikipedia Articles
 
+Sum of Page Views per month of 50,000 articles in Wikipedia are agreggated by using MapReduce. This reflect the users of Wikipedia and it is very evident that there is an increasing trend in Wikipedia users.
+
 ![Line Chart][linechartsumpageviews]
 
 <!-- POSSIBLE EVOLUTIONS -->
