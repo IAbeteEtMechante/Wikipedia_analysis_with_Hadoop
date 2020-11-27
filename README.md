@@ -28,8 +28,8 @@
 This is our project in Java for the course M3-Java at Harbour Space. We are currently studying Data Science, so we thought it would be interesting to apply what we have learned in Java to crunch some Big Data using MapReduce.
 
 Authors: 
-<li>Patricia Poral</li>
 <li>Duc Pham</li>
+<li>Patricia Poral</li>
 <li>Pierre Schwob</li>
 <br>
 
@@ -208,16 +208,18 @@ Not only do we want to check that our MapReduce jobs work properly, but because 
 
 <!-- RESULTS AND ANALYSIS-->
 ## Results and Analysis
-### Covid Related Articles
+### Covid Related Wikipedia Articles
 Using MapReduce codes, we were able to obtain the total views of Covid related articles per day which can be viewed inside /data folder. Below is the line chart produced from LineChart.java.
-
-
 
 ![Line Chart][linechart]
 
 ### Wikipedia Articles
 
 ![Line Chart][linechartsumpageviews]
+
+### Wikipedia Top 25 Viewed Articles
+
+![Bar Chart][barchart]
 
 <!-- POSSIBLE EVOLUTIONS -->
 ## Possible Evolutions
@@ -322,4 +324,5 @@ Project Link: [https://github.com/IAbeteEtMechante/Wikipedia_analysis_with_Hadoo
 [hadoop-output]: images/output.png
 [linechart]: images/LineChart.jpeg
 [linechartsumpageviews]: images/LineChartSumPageViews.jpeg
+[barchart]: images/BarChartTop25Articles.png
 
