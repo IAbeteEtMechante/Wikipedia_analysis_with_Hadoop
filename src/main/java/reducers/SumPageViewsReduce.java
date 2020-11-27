@@ -22,8 +22,8 @@ public class SumPageViewsReduce extends
 
     /** Reduce Function
      * Aggregation of results.
-     * Outputs the total views
-     * for Wikipedia articles.
+     * Outputs the total views for all Wikipedia
+     * articles for certain period.
      *
      * @param key is the date from dump files of Wikipedia articles.
      * @param values is the view count of Wikipedia articles.

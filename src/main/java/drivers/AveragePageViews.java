@@ -22,8 +22,7 @@ import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 /** MapReduce program for Average Page Views of Wikipedia articles.
- * This will output the average page views of Wikipedia articles
- * per month.
+ * This will output the average page views of Wikipedia articles.
  */
 
 public class AveragePageViews {
@@ -33,7 +32,7 @@ public class AveragePageViews {
          * Maps input to article title and views.
          *
          * @param key is title of article from Wikipedia.
-         * @param value is the page views of the aricle.
+         * @param value is the page views of the article.
          * @param context is the map containing the article title and its
          *                corresponding page views.
          * @throws IOException if map cannot be written or closed.
@@ -66,7 +65,6 @@ public class AveragePageViews {
             Reducer<Text, LongWritable, Text, DoubleWritable> {
 
         /** Reduce Function of the program.
-         * Overwriting the views with average views.
          * Aggregation of results.
          *
          * @param key is title of article from Wikipedia.

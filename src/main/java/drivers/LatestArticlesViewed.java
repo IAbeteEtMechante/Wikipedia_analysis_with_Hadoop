@@ -29,9 +29,10 @@ public class LatestArticlesViewed {
             extends Mapper<LongWritable, Text, Text, LongWritable> {
 
         /** Map Function of the program.
+         * Maps input to recently article title.
          *
          * @param key is the title of an article from Wikipedia.
-         * @param value is the sump of page views of an article.
+         * @param value is the sum of page views of an article.
          * @param context is the map containing articles recently
          *                viewed by the users.
          * @throws IOException if map cannot be written or closed.
@@ -60,9 +61,11 @@ public class LatestArticlesViewed {
             Reducer<Text, LongWritable, Text, DoubleWritable> {
 
         /** Reduce Function of the program.
+         * Overwriting the views with average views.
+         * Aggregation of results.
          *
          * @param key is the title of article from Wikipedia.
-         * @param values is the sump of page views of an article.
+         * @param values is the sum of page views of an article.
          * @param context is the map containing articles recently
          *                viewed by the users.
          * @throws IOException if reduce cannot be written or closed.

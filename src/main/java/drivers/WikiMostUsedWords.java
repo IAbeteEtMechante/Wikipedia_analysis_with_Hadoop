@@ -19,7 +19,7 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.util.GenericOptionsParser;
 
 /** MapReduce program for Most Used Words in Wikipedia articles.
- * This will output the total count of words from
+ * This will output the total count of a word from
  * Wikipedia articles.
  */
 

@@ -1,3 +1,11 @@
+/* MapReduce Program - file SumPageViewsReduce.java
+ * Authors:
+ * Duc Pham
+ * Patricia Poral
+ * Pierre Schwob
+ * copyright (c) 2020
+ */
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileReader;
@@ -11,10 +19,30 @@ import java.util.ArrayList;
 import java.util.List;
 import org.json.JSONObject;
 
+/** Program that outputs Wikipedia articles
+ * and its view count for a specified time frame.
+ */
+
 public class WikipediaCrawler {
+
+    /** Specify filename, start and end date where
+     * articles are obtained from.
+     *
+     * @param args an array of command-line arguments for the application.
+     * @throws Exception if error occurs in the method.
+     */
+
     public static void main(String[] args) throws Exception {
         prepUrl("data/covid_articles", "2019120100", "2020050300");
     }
+
+    /** Gets the URL then converts and stores
+     * it as a String.
+     *
+     * @param url url related to filename defined.
+     * @return url into String.
+     * @throws Exception if error occurs in the method.
+     */
 
     public static String sendGet(String url) throws Exception {
         URL obj = new URL(url);
@@ -43,6 +71,13 @@ public class WikipediaCrawler {
         }
     }
 
+    /** Outputs the title of Wikipedia article, its view count
+     * and date it was obtained from.
+     *
+     * @param response is the URL converted to String
+     * @return result
+     */
+
     public static String parseFromJsonResponse(String response) {
         System.out.println(response);
         JSONObject myjson;
@@ -68,6 +103,21 @@ public class WikipediaCrawler {
         }
         return result;
     }
+
+    /** Fetch articles from URL and outputs the title
+     * of Wikipedia article, its view count and date
+     * it was obtained from.
+     *
+     * @param filename is the subject of related article
+     *                 interested in.
+     * @param startDates is the date where articles from
+     *                   Wikipedia are first obtained.
+     * @param endDates is the date where articles from
+     *                 Wikipedia are last obtained.
+     * @return the title of Covid related articles and its
+     *                  page views for the specified time frame
+     * @throws Exception if error occurs in the method.
+     */
 
     public static String prepUrl(String filename,
                                  String startDates,

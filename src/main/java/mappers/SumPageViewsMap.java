@@ -21,11 +21,11 @@ import org.apache.hadoop.mapreduce.Mapper;
 public class SumPageViewsMap extends Mapper<LongWritable, Text, Text, LongWritable> {
 
     /** Map Function
-     * Maps every input to record one.
+     * Maps every input to record sum of page views.
      *
      * @param key is the title of Wikipedia articles.
      * @param value is the view count of Wikipedia articles.
-     * @param context is the map article title and its view count.
+     * @param context is the map of article title and its view count.
      * @throws IOException if map cannot be written or closed.
      * @throws InterruptedException if interrupted while processing.
      */

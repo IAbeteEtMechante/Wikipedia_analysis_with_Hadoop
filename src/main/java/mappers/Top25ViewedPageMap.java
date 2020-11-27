@@ -1,4 +1,4 @@
-/* MapReduce Program - file CovidMap.java
+/* MapReduce Program - file Top25ViewedPageMap.java
  * Authors:
  * Duc Pham
  * Patricia Poral
@@ -14,20 +14,18 @@ import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 
-/** Mapper class for MapReduce program
- * of CovidDriver.java
+/** Mapper class for MapReduce Program
+ * of Top25ViewedPageDriver.java
  */
 
-public class CovidMap extends Mapper<LongWritable, Text, Text, LongWritable> {
+public class Top25ViewedPageMap extends Mapper<LongWritable, Text, Text, LongWritable> {
 
     /** Map Function
-     * Maps every input to record view count of Covid related
-     * Wikipedia articles.
+     * Maps every input to record total page views.
      *
-     * @param key is the date from dump files of Wikipedia articles.
-     * @param value is the view count of Covid related Wikipedia articles.
-     * @param context is the map containing date and corresponding view count
-     *                for a certain date.
+     * @param key is the title of Wikipedia article.
+     * @param value is the total page view of Wikipedia article.
+     * @param context is the map of article title and its view count.
      * @throws IOException if map cannot be written or closed.
      * @throws InterruptedException if interrupted while processing.
      */
@@ -35,10 +33,10 @@ public class CovidMap extends Mapper<LongWritable, Text, Text, LongWritable> {
     @Override
     public void map(LongWritable key, Text value, Context context)
             throws IOException, InterruptedException {
-        String delims = ",";
+        String delims = " ";
         String[] wikiData = StringUtils.split(value.toString(), delims);
-        Text date = new Text(wikiData[1]);
+        Text article = new Text(wikiData[0]);
         LongWritable views = new LongWritable(Long.parseLong(wikiData[2]));
-        context.write(date, views);
+        context.write(article, views);
     }
 }

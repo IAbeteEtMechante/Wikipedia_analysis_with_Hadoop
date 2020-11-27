@@ -24,8 +24,10 @@ public class CovidReduce extends Reducer<Text, LongWritable, Text, LongWritable>
      * Outputs the sum total views of
      * Covid related Wikipedia articles.
      *
-     * @param key is the covid related article from Wikipedia.
-     * @param values is the view count of Covid related Wikipedia articles.
+     * @param key is the date where views in Wikipedia articles
+     *            are obtained.
+     * @param values is the total view count of Covid related Wikipedia
+     *               article in a specified date.
      * @param context is the map containing summary of data.
      * @throws IOException if reduce cannot be written or closed.
      * @throws InterruptedException if interrupted while processing.

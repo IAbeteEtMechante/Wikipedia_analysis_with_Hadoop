@@ -29,6 +29,8 @@ public class MostPopularArticles {
             extends Mapper<LongWritable, Text, Text, LongWritable> {
 
         /** Map Function of the program.
+         * Maps the input to article title and
+         * total page views.
          *
          * @param key is title of article from Wikipedia.
          * @param value is the page views of the article.
