@@ -349,7 +349,13 @@ Project Link: [https://github.com/IAbeteEtMechante/Wikipedia_analysis_with_Hadoo
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* To be completed
+
+If you want to learn more on Hadoop and MApReduce:
+<br>
+* There are a few videos on the subject on this channel: 
+https://www.youtube.com/watch?v=Cz9TaunsRPQ
+* This book is very intereesting, and come with a set of exercices with solutions:
+"Big Data with Hadoop MapReduce"
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
